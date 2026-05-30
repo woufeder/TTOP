@@ -4,12 +4,28 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/TTOP/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function restoreGitHubPagesRoute(location) {
+        if (!location.search.startsWith('?/')) {
+          return
+        }
+
+        const decodedPath = location.search
+          .slice(2)
+          .split('&')
+          .map((segment, index) => (index === 0 ? segment : `?${segment}`))
+          .join('')
+          .replace(/~and~/g, '&')
+
+        window.history.replaceState(null, '', `${location.pathname}${decodedPath}${location.hash}`)
+      })(window.location)
+    </script>
     <meta
       name="description"
       content="奇幻世界資訊站，使用 Vue、Tailwind 與 Markdown 建立的靜態世界觀資料庫。"
     />
     <title>奇幻世界資訊站</title>
-    <script type="module" crossorigin src="/TTOP/assets/index-DRMRJDTy.js"></script>
+    <script type="module" crossorigin src="/TTOP/assets/index-BcuptBTQ.js"></script>
     <link rel="stylesheet" crossorigin href="/TTOP/assets/index-D7_wO5lm.css">
   </head>
   <body>

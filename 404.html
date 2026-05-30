@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirecting...</title>
+    <script>
+      (function redirectToSpa() {
+        const { origin, pathname, search, hash, hostname } = window.location
+        const segments = pathname.split('/').filter(Boolean)
+        const isGitHubProjectPage = hostname.endsWith('github.io') && segments.length > 0
+        const basePath = isGitHubProjectPage ? `/${segments[0]}` : ''
+        const routePath = `${pathname.slice(basePath.length)}${search}${hash}`.replace(/^\//, '')
+        const target = `${origin}${basePath}/?/${routePath.replace(/&/g, '~and~')}`
+
+        window.location.replace(target)
+      })()
+    </script>
+  </head>
+  <body></body>
+</html>

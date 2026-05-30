@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" fill="none">
+  <rect width="1200" height="780" fill="#101A1C" />
+  <rect x="34" y="34" width="1132" height="712" rx="32" fill="#EAD4AF" fill-opacity="0.08" stroke="#C79E5F" stroke-opacity="0.3" stroke-width="4" />
+  <path d="M150 614C236 430 370 296 552 214C734 132 888 140 1014 238C1096 302 1128 396 1110 520C1094 632 1022 684 894 676C766 668 640 700 516 772" fill="#89A174" fill-opacity="0.18" stroke="#A9C18B" stroke-opacity="0.38" stroke-width="6" />
+  <path d="M256 492C398 442 520 356 622 234C686 158 772 132 880 156" stroke="#DBECC7" stroke-opacity="0.42" stroke-width="8" stroke-linecap="round" stroke-dasharray="4 18" />
+  <path d="M262 290C340 334 430 338 532 302C634 266 728 278 814 338C900 398 982 418 1060 398" stroke="#C2D6A7" stroke-opacity="0.38" stroke-width="6" stroke-linecap="round" />
+  <circle cx="694" cy="274" r="20" fill="#2D4A35" fill-opacity="0.54" />
+  <circle cx="438" cy="480" r="20" fill="#2D4A35" fill-opacity="0.54" />
+  <circle cx="822" cy="432" r="20" fill="#2D4A35" fill-opacity="0.54" />
+  <text x="404" y="126" fill="#F7E6B6" font-size="42" font-family="Georgia, serif" letter-spacing="10">TRAILAN</text>
+</svg>

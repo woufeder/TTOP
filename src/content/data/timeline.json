@@ -1,0 +1,51 @@
+[
+  {
+    "era": "神話時代",
+    "year": "文前曆元年",
+    "label": "世界創生",
+    "summary": "群星由塵海聚攏，七重天幕第一次倒映在海面。",
+    "detailSlug": "myth-origin"
+  },
+  {
+    "era": "神話時代",
+    "year": "文前曆 87 年",
+    "label": "熾羽降臨",
+    "summary": "第一批火羽使者被記載於北方峽灣，留下曆法與祭儀。",
+    "detailSlug": "ember-arrival"
+  },
+  {
+    "era": "帝國開端",
+    "year": "王曆 1 年",
+    "label": "第一帝國立國",
+    "summary": "烏納諸城締結血誓，帝國議會在朗狄許高原成立。",
+    "detailSlug": "unna-founding"
+  },
+  {
+    "era": "帝國開端",
+    "year": "王曆 132 年",
+    "label": "蒼穹圖書塔竣工",
+    "summary": "將地誌、宗教與星辰測繪彙編，成為後世學派共通底本。",
+    "detailSlug": "sky-archive"
+  },
+  {
+    "era": "裂冠時代",
+    "year": "王曆 348 年",
+    "label": "雙日內戰",
+    "summary": "皇室繼承爭議導致疆域分裂，崔蘭王國自此獨立。",
+    "detailSlug": "sundered-crowns"
+  },
+  {
+    "era": "裂冠時代",
+    "year": "王曆 366 年",
+    "label": "玄鐘議和",
+    "summary": "六大宗教派系在鐘塔城簽訂停戰文書，重設曆法。",
+    "detailSlug": "obsidian-bell-treaty"
+  },
+  {
+    "era": "現世紀",
+    "year": "新曆 27 年",
+    "label": "北境天火",
+    "summary": "天空裂縫再次出現，舊預言與失落地圖被重新搜尋。",
+    "detailSlug": "north-flare"
+  }
+]

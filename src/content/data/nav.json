@@ -1,0 +1,44 @@
+[
+  {
+    "label": "世界觀",
+    "path": "/world",
+    "description": "總覽與設定入口",
+    "children": [
+      { "label": "編年史", "path": "/world/history" },
+      { "label": "列王記", "path": "/world/records" },
+      { "label": "用語", "path": "/world/terms" },
+      { "label": "宗教", "path": "/world/religions" },
+      { "label": "組織", "path": "/world/organizations" }
+    ]
+  },
+  {
+    "label": "地圖",
+    "path": "/map",
+    "description": "世界總圖與區域地誌"
+  },
+  {
+    "label": "種族",
+    "path": "/races",
+    "description": "血脈、習俗與分支"
+  },
+  {
+    "label": "勢力",
+    "path": "/powers",
+    "description": "政權、王室與聯盟"
+  },
+  {
+    "label": "角色",
+    "path": "/characters",
+    "description": "人物志與關係線"
+  },
+  {
+    "label": "文庫",
+    "path": "/articles",
+    "description": "Markdown 世界觀筆記"
+  },
+  {
+    "label": "銘謝",
+    "path": "/credits",
+    "description": "素材來源與命名規範"
+  }
+]

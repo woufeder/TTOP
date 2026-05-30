@@ -1,0 +1,16 @@
+:root {
+  --color-ink: #31180d;
+  --color-wine: #4a1014;
+  --color-parchment: #ead4af;
+  --color-parchment-deep: #b68758;
+  --color-old-gold: #b08a42;
+  --color-night: #090c14;
+  --color-night-alt: #141a2b;
+  --color-mist: rgba(249, 237, 216, 0.72);
+  --panel-edge: rgba(93, 59, 32, 0.2);
+  --panel-fill: rgba(244, 229, 200, 0.88);
+  --panel-shadow: 0 28px 90px rgba(22, 9, 4, 0.35);
+  --font-display: Baskerville, 'Iowan Old Style', 'Palatino Linotype', 'Songti TC', serif;
+  --font-body: Alegreya, Georgia, 'Noto Serif TC', PMingLiU, serif;
+  --font-ui: Optima, 'Segoe UI', 'Noto Sans TC', sans-serif;
+}

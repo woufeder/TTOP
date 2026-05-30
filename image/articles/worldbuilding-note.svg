@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" fill="none">
+  <rect width="1280" height="720" fill="#15121D" />
+  <rect x="72" y="72" width="1136" height="576" rx="28" fill="#EAD4AF" fill-opacity="0.1" stroke="#D8B77A" stroke-opacity="0.32" stroke-width="4" />
+  <path d="M160 544C310 348 480 238 670 214C860 190 1020 236 1152 352" stroke="#D1BC8F" stroke-opacity="0.42" stroke-width="8" stroke-linecap="round" />
+  <path d="M238 210L412 514L626 256L824 522L1006 218" stroke="#B68758" stroke-opacity="0.48" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+  <text x="154" y="318" fill="#F7E6B6" font-size="60" font-family="Georgia, serif" letter-spacing="10">WORLD ATLAS</text>
+  <text x="154" y="396" fill="#EAD4AF" fill-opacity="0.78" font-size="32" font-family="Georgia, serif" letter-spacing="6">Maps, crowns and archive notes</text>
+</svg>

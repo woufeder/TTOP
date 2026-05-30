@@ -1,0 +1,1 @@
+function e(e){return!e||/^(?:[a-z]+:)?\/\//i.test(e)?e:`/TTOP/${e.replace(/^\/+/,``)}`}export{e as t};

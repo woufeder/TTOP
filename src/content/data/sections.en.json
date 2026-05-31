@@ -1,0 +1,149 @@
+{
+  "terms": {
+    "eyebrow": "World Setting",
+    "title": "Terms and Core Concepts",
+    "intro": "Once the basic setting pages are data-driven, expanding the glossary only requires adding records instead of new components.",
+    "items": [
+      {
+        "title": "Old Calendar",
+        "subtitle": "Imperial Calendar",
+        "summary": "The dating system used by the First Empire, now mostly preserved in academic and religious notation."
+      },
+      {
+        "title": "Skyfire",
+        "subtitle": "Skyfire",
+        "summary": "A general term for celestial fractures, falling fire, and the abnormal omens that follow them."
+      },
+      {
+        "title": "Atlas Scroll",
+        "subtitle": "Atlas Scroll",
+        "summary": "A scroll that combines maps, taxation records, and marching roads, serving as a main cross-reference medium for the setting."
+      }
+    ]
+  },
+  "religions": {
+    "eyebrow": "Faith Systems",
+    "title": "Religions and Rituals",
+    "intro": "This page reserves space for sects, festivals, and taboos so it can later connect to art, maps, and timelines.",
+    "items": [
+      {
+        "title": "Shrine of Ember Wings",
+        "subtitle": "Fire and Revelation",
+        "summary": "A faith centered on the embers and omens left behind by the winged messengers, with incense and braziers in its rites."
+      },
+      {
+        "title": "Order of the Moon Mirror",
+        "subtitle": "Mirror and Oath",
+        "summary": "Believes moonlight reveals the truth behind sworn words, so its clergy often witness diplomacy."
+      },
+      {
+        "title": "Dirge of the Deep Tide",
+        "subtitle": "Sea and Memory",
+        "summary": "Coastal cities use song and glass vessels to remember the dead and preserve sea routes."
+      }
+    ]
+  },
+  "organizations": {
+    "eyebrow": "Power Networks",
+    "title": "Orders and Institutions",
+    "intro": "This section can later connect organizations to characters, places, and article references through shared tags.",
+    "items": [
+      {
+        "title": "Order of Radiant Fire",
+        "subtitle": "Stars and Omens",
+        "summary": "A scholarly faction studying celestial change through old calendars, star charts, and fire-bowl rites."
+      },
+      {
+        "title": "Council of the Seven Seats",
+        "subtitle": "Present Seat of Governance",
+        "summary": "A political structure formed by royal, religious, and mercantile representatives to preserve the current order."
+      },
+      {
+        "title": "Forest Riders",
+        "subtitle": "Trailan Border Cavalry",
+        "summary": "A mobile force that patrols woodland passes and handles negotiations with the northern frontier."
+      }
+    ]
+  },
+  "races": {
+    "eyebrow": "Peoples of the World",
+    "title": "Races and Lineages",
+    "intro": "Phase one keeps this page card-based, with room to later split out subpages, stats, and related characters.",
+    "items": [
+      {
+        "slug": "humans",
+        "title": "Humans",
+        "subtitle": "Cities of Oath",
+        "summary": "The most widespread people in the world, with the greatest political and cultural variety.",
+        "paragraphs": [
+          "Human city-states stretch across plains, coasts, and the remaining imperial roads, so their customs and governments differ sharply from one territory to another. From Trailan's forests to the Bell Tower cities, treaties, taxes, and military roads define how human realms face each other.",
+          "Their strength lies in expansion and institutional flexibility, but that also makes them prone to violent political change within a single generation. Many of the world's royal records, atlases, and legal archives are maintained by human scholars and scribes."
+        ]
+      },
+      {
+        "slug": "moonborn",
+        "title": "Moonborn",
+        "subtitle": "Children of the Mirror",
+        "summary": "Known for cultures built around memory and oath, often found in religious and judicial institutions.",
+        "paragraphs": [
+          "The Moonborn treat sworn words as material things, believing moonlight and memory preserve a speaker's true intent. Because of that, many Moonborn serve as witnesses in ritual, law, and diplomacy.",
+          "Their settlements often rise near mirror lakes, stone sanctuaries, or high places that catch the night sky. Outsiders often read them as distant, but within their own communities they are deeply bound by kinship, promise, and remembrance."
+        ]
+      },
+      {
+        "slug": "stoneblood-clans",
+        "title": "Stoneblood Clans",
+        "subtitle": "Deep Forge Clans",
+        "summary": "Masters of subterranean workshops and mineral routes, vital to mountain borderlands.",
+        "paragraphs": [
+          "The Stoneblood Clans dwell between mountain halls and deep foundries, with a level of knowledge about ore veins, underground water, and resonant stone that no other people can match. Their workshops forge weapons, transport rails, and sealing devices crucial to frontier powers.",
+          "Politically, the clans favor rule through kin-groups and forge councils rather than outside crowns. Gaining their support usually requires long trade agreements, shared border defense, or the renewal of much older oaths."
+        ]
+      }
+    ]
+  },
+  "powers": {
+    "eyebrow": "Sovereign Archives",
+    "title": "Powers and Territorial Blocs",
+    "intro": "This page reserves data slices for governments, treaties, armies, and trade so filtering can be added later.",
+    "items": [
+      {
+        "title": "First Empire Loyalist Network",
+        "subtitle": "Archive Loyalists",
+        "summary": "A loose alliance still centered on imperial legality and the hierarchy of the old nobility."
+      },
+      {
+        "title": "Royal House of Trailan",
+        "subtitle": "Forest Crown",
+        "summary": "Controls the eastern forests and ore roads, prioritizing border defense and toll-based trade."
+      },
+      {
+        "title": "Bell Tower Trade Compact",
+        "subtitle": "Bell Market Compact",
+        "summary": "A coalition of city guilds that strongly influences taxes, shipping lanes, and council negotiations."
+      }
+    ]
+  },
+  "credits": {
+    "eyebrow": "Asset Stewardship",
+    "title": "Credits and Naming Rules",
+    "intro": "Before launch, store maps, illustrations, and backgrounds under public/image and keep a matching credits registry.",
+    "items": [
+      {
+        "title": "Background Assets",
+        "subtitle": "Backgrounds",
+        "summary": "Use prefixes such as desk-, parchment-, and starfield-, and always record source and license."
+      },
+      {
+        "title": "Map Assets",
+        "subtitle": "Maps",
+        "summary": "Store the world map and regional maps in separate folders while keeping thumbnail and full-size naming consistent."
+      },
+      {
+        "title": "Article Covers",
+        "subtitle": "Article Covers",
+        "summary": "Match cover filenames to article slugs so Markdown frontmatter can reference them directly."
+      }
+    ]
+  }
+}

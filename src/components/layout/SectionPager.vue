@@ -37,7 +37,7 @@ function next() {
   <div v-if="items.length > 1" class="flex items-center gap-3 text-wine/75">
     <button
       type="button"
-      class="flex h-10 w-10 items-center justify-center rounded-full border border-[rgba(84,46,23,0.14)] bg-white/40 transition hover:border-oldGold/40 hover:bg-white/70"
+      class="keep-round flex h-10 w-10 items-center justify-center rounded-full border border-[rgba(84,46,23,0.14)] bg-white/40 transition hover:border-oldGold/40 hover:bg-white/70"
       aria-label="上一張"
       @click="previous"
     >
@@ -58,7 +58,7 @@ function next() {
 
     <button
       type="button"
-      class="flex h-10 w-10 items-center justify-center rounded-full border border-[rgba(84,46,23,0.14)] bg-white/40 transition hover:border-oldGold/40 hover:bg-white/70"
+      class="keep-round flex h-10 w-10 items-center justify-center rounded-full border border-[rgba(84,46,23,0.14)] bg-white/40 transition hover:border-oldGold/40 hover:bg-white/70"
       aria-label="下一張"
       @click="next"
     >

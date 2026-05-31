@@ -1,0 +1,44 @@
+[
+  {
+    "dynasty": "Dinastia della Stella del Mattino",
+    "ruler": "Aesfan I",
+    "reign": "Regale 1 - 23",
+    "seat": "Rondich",
+    "notes": "Unificò le sette città e istituì il primo codice imperiale e il sistema di misure."
+  },
+  {
+    "dynasty": "Dinastia della Stella del Mattino",
+    "ruler": "Aesfan II",
+    "reign": "Regale 23 - 61",
+    "seat": "Rondich",
+    "notes": "Ampliò le torri archivio e l osservatorio, integrando formalmente gli astronomi nella corte."
+  },
+  {
+    "dynasty": "Dinastia della Marea Grigia",
+    "ruler": "Regina Noshir",
+    "reign": "Regale 61 - 104",
+    "seat": "Porto Onda Bianca",
+    "notes": "Aprì le rotte oceaniche e consolidò il sistema fiscale su sale e ferro del sud."
+  },
+  {
+    "dynasty": "Dinastia della Marea Grigia",
+    "ruler": "Simon IV",
+    "reign": "Regale 104 - 157",
+    "seat": "Rondich",
+    "notes": "Promosse il grande censimento geografico e l atlante militare del regno."
+  },
+  {
+    "dynasty": "Reggente della Corona Spezzata",
+    "ruler": "Duca Reggente Mihelen",
+    "reign": "Regale 348 - 354",
+    "seat": "Rocca del Gelo",
+    "notes": "Controllò la via del grano del nord durante la guerra civile e firmò un accordo di confine provvisorio con Trailan."
+  },
+  {
+    "dynasty": "Consiglio del Nuovo Calendario",
+    "ruler": "Portavoce dei Sette Seggi",
+    "reign": "Nuovo Calendario 1 - Presente",
+    "seat": "Città della Torre Campanaria",
+    "notes": "L attuale sistema di governo, in cui regalità e religione sono supervisionate congiuntamente dal consiglio."
+  }
+]

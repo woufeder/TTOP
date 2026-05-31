@@ -1,0 +1,120 @@
+[
+  {
+    "slug": "world-overview",
+    "kind": "overview",
+    "name": "Atlas of the Seven Skies",
+    "subtitle": "Atlas of the Seven Skies",
+    "summary": "A navigational overview of the continents, seas, and major powers across the setting.",
+    "mapImage": "/image/maps/world-overview.svg",
+    "hotspots": [
+      {
+        "slug": "unna-empire",
+        "name": "First Empire",
+        "x": 35,
+        "y": 37,
+        "type": "empire",
+        "summary": "The heart of the ancient empire, still home to its towers and scholarly institutions.",
+        "description": "Highland cities circle Rondich, where surviving imperial archives and court workshops still cluster.",
+        "image": "/image/maps/unna-empire.svg",
+        "facts": ["The archive towers preserve complete old-calendar codices", "Imperial roads still form the military backbone", "Most royal cadet lines now live in the outer city"],
+        "targetRegionSlug": "unna-empire"
+      },
+      {
+        "slug": "trailan-kingdom",
+        "name": "Trailan Kingdom",
+        "x": 62,
+        "y": 51,
+        "type": "kingdom",
+        "summary": "A kingdom that rose after the fractured crown era, famed for forest taxes and iron trade.",
+        "description": "Trailan controls the eastern passages through wooded mountain gates and maintains a mobile corps of forest riders.",
+        "image": "/image/maps/trailan-kingdom.svg",
+        "facts": ["Its capital hosts the Lunar Archive", "It keeps a fragile pact with northern tribes", "Eastern ports produce renowned glasswork"],
+        "targetRegionSlug": "trailan-kingdom"
+      }
+    ]
+  },
+  {
+    "slug": "unna-empire",
+    "name": "First Empire",
+    "subtitle": "Unna Empire",
+    "summary": "A highland imperial core shaped by the old capital and the academy towers.",
+    "mapImage": "/image/maps/unna-empire.svg",
+    "hotspots": [
+      {
+        "slug": "rondich-capital",
+        "name": "Rondich",
+        "x": 52,
+        "y": 38,
+        "type": "capital",
+        "summary": "The old capital where imperial ritual still survives among towers and councils.",
+        "description": "Seven layers of walls encircle the palace ridge, and the inner city remains home to scribes, artisans, and descendants of the old court.",
+        "image": "/image/maps/unna-empire.svg",
+        "facts": ["The central tower overlooks the entire city", "Imperial investitures are still held here", "Murals of the fire wars remain on public walls"]
+      },
+      {
+        "slug": "sky-archive",
+        "name": "Sky Archive Tower",
+        "x": 42,
+        "y": 46,
+        "type": "archive",
+        "summary": "The academic core that preserves world atlases and the old calendrical records.",
+        "description": "Its levels are divided into royal history, naval charts, and prophecy archives, with access restricted by council warrants.",
+        "image": "/image/maps/unna-empire.svg",
+        "facts": ["Metal plates mark the archive levels", "The top floor houses an observatory disk", "Copying maps is the rite of passage for apprentices"]
+      },
+      {
+        "slug": "ember-gate",
+        "name": "Ember Gate",
+        "x": 64,
+        "y": 58,
+        "type": "fortress",
+        "summary": "A fortress and customs station guarding the southern highland road.",
+        "description": "The gate serves trade and military traffic alike, and every southern caravan must register cargo and perform the fire rite here.",
+        "image": "/image/maps/unna-empire.svg",
+        "facts": ["The watch fire is lit every day", "It holds the most complete imperial armory", "The only stone bridge toward the southern salt road is controlled here"]
+      }
+    ]
+  },
+  {
+    "slug": "trailan-kingdom",
+    "name": "Trailan Kingdom",
+    "subtitle": "Trailan Kingdom",
+    "summary": "A forest monarchy built on mountains, iron, and the Lunar Archive.",
+    "mapImage": "/image/maps/trailan-kingdom.svg",
+    "hotspots": [
+      {
+        "slug": "moon-archive",
+        "name": "Lunar Archive",
+        "x": 58,
+        "y": 35,
+        "type": "archive",
+        "summary": "A terrace archive that preserves treaties and land grants of the eastern realm.",
+        "description": "Its outer walls are inlaid with moon-silver stone, and the collection is physically reordered at each new moon.",
+        "image": "/image/maps/trailan-kingdom.svg",
+        "facts": ["New moon nights host public treaty readings", "Records reach back to frontier negotiations before the fractured crown era", "Its silver masonry doubles as a navigation marker"]
+      },
+      {
+        "slug": "glass-harbor",
+        "name": "Glass Harbor",
+        "x": 31,
+        "y": 62,
+        "type": "port",
+        "summary": "A harbor city known for glass and dye production.",
+        "description": "It exports deep-blue glass and seaweed dyes and acts as the kingdom's principal gateway to the outer sea.",
+        "image": "/image/maps/trailan-kingdom.svg",
+        "facts": ["The harbor office also runs a lighthouse school", "Coastal workshops craft star-reading lenses", "A seven-night lantern festival is held each winter"]
+      },
+      {
+        "slug": "stag-pass",
+        "name": "Stag Pass",
+        "x": 74,
+        "y": 54,
+        "type": "pass",
+        "summary": "A wooded frontier corridor patrolled by the forest riders.",
+        "description": "Dense woodland presses against a cliffside road here, forming the shortest route between the eastern kingdom and the north.",
+        "image": "/image/maps/trailan-kingdom.svg",
+        "facts": ["Winter travel is restricted to daylight", "Hunting bells line the mountain trail", "The cliff walls bear migration carvings from ancient tribes"]
+      }
+    ]
+  }
+]

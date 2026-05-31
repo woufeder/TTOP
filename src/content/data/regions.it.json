@@ -1,0 +1,120 @@
+[
+  {
+    "slug": "world-overview",
+    "kind": "overview",
+    "name": "Atlante dei Sette Cieli",
+    "subtitle": "Atlante dei Sette Cieli",
+    "summary": "Una panoramica di continenti, mari e poteri principali del mondo.",
+    "mapImage": "/image/maps/world-overview.svg",
+    "hotspots": [
+      {
+        "slug": "unna-empire",
+        "name": "Primo Impero",
+        "x": 35,
+        "y": 37,
+        "type": "impero",
+        "summary": "Il cuore dell antico impero, ancora segnato da torri e archivi di sapere.",
+        "description": "Le città dell altopiano circondano Rondich, dove sopravvivono archivi imperiali e botteghe di corte.",
+        "image": "/image/maps/unna-empire.svg",
+        "facts": ["Le torri archivio custodiscono i codici del vecchio calendario", "Le strade imperiali restano la spina dorsale militare", "Molti rami dinastici vivono ora nella città esterna"],
+        "targetRegionSlug": "unna-empire"
+      },
+      {
+        "slug": "trailan-kingdom",
+        "name": "Regno di Trailan",
+        "x": 62,
+        "y": 51,
+        "type": "regno",
+        "summary": "Un regno sorto dopo l era della corona spezzata, noto per tasse forestali e ferro.",
+        "description": "Trailan controlla i passaggi orientali tra boschi e montagne e mantiene un corpo mobile di cavalieri silvani.",
+        "image": "/image/maps/trailan-kingdom.svg",
+        "facts": ["La capitale ospita l Archivio Lunare", "Mantiene un fragile patto con le tribù del nord", "I porti orientali producono vetro pregiato"],
+        "targetRegionSlug": "trailan-kingdom"
+      }
+    ]
+  },
+  {
+    "slug": "unna-empire",
+    "name": "Primo Impero",
+    "subtitle": "Impero di Unna",
+    "summary": "Un cuore imperiale d altopiano modellato dalla vecchia capitale e dalle torri accademiche.",
+    "mapImage": "/image/maps/unna-empire.svg",
+    "hotspots": [
+      {
+        "slug": "rondich-capital",
+        "name": "Rondich",
+        "x": 52,
+        "y": 38,
+        "type": "capitale",
+        "summary": "L antica capitale dove i rituali imperiali sopravvivono tra torri e consigli.",
+        "description": "Sette cerchie murarie abbracciano il rilievo del palazzo, mentre scribi, artigiani ed eredi della vecchia corte abitano ancora la città interna.",
+        "image": "/image/maps/unna-empire.svg",
+        "facts": ["La torre centrale domina l intera città", "Le investiture imperiali si tengono ancora qui", "Sui muri restano affreschi delle guerre del fuoco"]
+      },
+      {
+        "slug": "sky-archive",
+        "name": "Torre dell Archivio Celeste",
+        "x": 42,
+        "y": 46,
+        "type": "archivio",
+        "summary": "Il cuore accademico che conserva atlanti del mondo e registri del vecchio calendario.",
+        "description": "I suoi livelli sono divisi tra storia regale, carte nautiche e archivi profetici, accessibili solo con mandato del consiglio.",
+        "image": "/image/maps/unna-empire.svg",
+        "facts": ["Piastre metalliche segnano i livelli dell archivio", "L ultimo piano ospita un disco osservatorio", "Copiare mappe è il rito di passaggio degli apprendisti"]
+      },
+      {
+        "slug": "ember-gate",
+        "name": "Porta delle Braci",
+        "x": 64,
+        "y": 58,
+        "type": "fortezza",
+        "summary": "Una fortezza e stazione doganale che protegge la via meridionale dell altopiano.",
+        "description": "La porta serve traffico commerciale e militare, e ogni carovana del sud deve registrare il carico e compiere il rito del fuoco.",
+        "image": "/image/maps/unna-empire.svg",
+        "facts": ["Il fuoco di guardia viene acceso ogni giorno", "Qui si trova l arsenale imperiale più completo", "L unico ponte di pietra verso la via del sale del sud è controllato da questo presidio"]
+      }
+    ]
+  },
+  {
+    "slug": "trailan-kingdom",
+    "name": "Regno di Trailan",
+    "subtitle": "Regno di Trailan",
+    "summary": "Una monarchia forestale costruita su montagne, ferro e Archivio Lunare.",
+    "mapImage": "/image/maps/trailan-kingdom.svg",
+    "hotspots": [
+      {
+        "slug": "moon-archive",
+        "name": "Archivio Lunare",
+        "x": 58,
+        "y": 35,
+        "type": "archivio",
+        "summary": "Un archivio su terrazza che conserva trattati e concessioni della regione orientale.",
+        "description": "Le pareti esterne sono intarsiate con pietra d argento lunare e la collezione viene riordinata a ogni novilunio.",
+        "image": "/image/maps/trailan-kingdom.svg",
+        "facts": ["Le notti di novilunio ospitano letture pubbliche dei trattati", "I registri risalgono ai negoziati di frontiera prima dell era della corona spezzata", "Le pietre d argento fungono anche da segnale di navigazione"]
+      },
+      {
+        "slug": "glass-harbor",
+        "name": "Porto del Vetro",
+        "x": 31,
+        "y": 62,
+        "type": "porto",
+        "summary": "Una città portuale celebre per vetro e tinture.",
+        "description": "Esporta vetro blu profondo e tinture di alga marina ed è il principale accesso del regno verso il mare aperto.",
+        "image": "/image/maps/trailan-kingdom.svg",
+        "facts": ["L ufficio portuale gestisce anche una scuola del faro", "Le botteghe costiere producono lenti per leggere le stelle", "Ogni inverno si tiene una festa di sette notti di lanterne"]
+      },
+      {
+        "slug": "stag-pass",
+        "name": "Passo del Cervo",
+        "x": 74,
+        "y": 54,
+        "type": "passo",
+        "summary": "Un corridoio di frontiera nei boschi pattugliato dai cavalieri silvani.",
+        "description": "Qui il bosco fitto stringe una via scavata nella roccia, formando il percorso più breve tra il regno orientale e il nord.",
+        "image": "/image/maps/trailan-kingdom.svg",
+        "facts": ["In inverno si viaggia solo di giorno", "Campane da caccia segnano il sentiero montano", "Le pareti rocciose mostrano incisioni migratorie di antiche tribù"]
+      }
+    ]
+  }
+]

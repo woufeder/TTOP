@@ -4,12 +4,15 @@ import { RouterLink, useRoute } from 'vue-router'
 import AppShell from '../components/layout/AppShell.vue'
 import ParchmentPanel from '../components/layout/ParchmentPanel.vue'
 import WorldMap from '../components/map/WorldMap.vue'
-import regions from '../content/data/regions.json'
+import { useSiteI18n } from '../composables/useSiteI18n'
+import { getLocalizedContent } from '../utils/content'
 
 const route = useRoute()
+const { locale, localeRoute, messages } = useSiteI18n()
+const regions = computed(() => getLocalizedContent('regions', locale.value))
 
 const region = computed(() =>
-  regions.find((item) => item.slug === route.params.regionSlug && item.slug !== 'world-overview'),
+  regions.value.find((item) => item.slug === route.params.regionSlug && item.slug !== 'world-overview'),
 )
 </script>
 
@@ -18,7 +21,7 @@ const region = computed(() =>
     <ParchmentPanel
       v-if="region"
       variant="map"
-      eyebrow="Regional Atlas"
+      :eyebrow="messages.regionMap.eyebrow"
       :title="region.name"
       :description="region.summary"
     >
@@ -27,26 +30,26 @@ const region = computed(() =>
 
         <aside class="space-y-4">
           <section class="paper-card rounded-[24px] p-5">
-            <p class="text-xs uppercase tracking-[0.34em] text-wine/55">overview</p>
+            <p class="text-xs uppercase tracking-[0.34em] text-wine/55">{{ messages.regionMap.overviewKicker }}</p>
             <h2 class="mt-3 font-display text-3xl text-ink">{{ region.subtitle }}</h2>
             <p class="mt-4 text-sm leading-8 text-ink/74">{{ region.summary }}</p>
           </section>
 
           <section class="paper-card rounded-[24px] p-5">
-            <p class="text-xs uppercase tracking-[0.34em] text-wine/55">route notes</p>
+            <p class="text-xs uppercase tracking-[0.34em] text-wine/55">{{ messages.regionMap.routeNotesKicker }}</p>
             <ul class="mt-4 space-y-3 text-sm leading-7 text-ink/74">
               <li v-for="point in region.hotspots" :key="point.slug" class="flex gap-3">
-                <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-oldGold" />
+                <span class="keep-round mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-oldGold" />
                 <span>{{ point.name }}：{{ point.summary }}</span>
               </li>
             </ul>
           </section>
 
           <RouterLink
-            to="/map"
+            :to="localeRoute('map')"
             class="inline-flex rounded-full bg-wine px-5 py-3 text-sm tracking-[0.18em] text-parchment transition hover:bg-[#5e171d]"
           >
-            回到世界總圖
+            {{ messages.regionMap.backToMap }}
           </RouterLink>
         </aside>
       </div>
@@ -55,15 +58,15 @@ const region = computed(() =>
     <ParchmentPanel
       v-else
       variant="compact"
-      eyebrow="Missing Region"
-      title="找不到這張地圖"
-      description="目前 regions.json 中沒有對應的區域 slug，可以稍後補資料再重新建置。"
+      :eyebrow="messages.regionMap.missingEyebrow"
+      :title="messages.regionMap.missingTitle"
+      :description="messages.regionMap.missingDescription"
     >
       <RouterLink
-        to="/map"
+        :to="localeRoute('map')"
         class="inline-flex rounded-full bg-wine px-5 py-3 text-sm tracking-[0.18em] text-parchment transition hover:bg-[#5e171d]"
       >
-        返回地圖總覽
+        {{ messages.regionMap.backToMapList }}
       </RouterLink>
     </ParchmentPanel>
   </AppShell>

@@ -1,10 +1,11 @@
 <script setup>
-import { computed, defineAsyncComponent, ref } from 'vue'
+import { computed, ref } from 'vue'
+import { useSiteI18n } from '../../composables/useSiteI18n'
 import { useLightbox } from '../../composables/useLightbox'
+import { withBase } from '../../utils/assets'
 import BaseLightbox from '../lightbox/BaseLightbox.vue'
+import MapPointModal from '../lightbox/MapPointModal.vue'
 import MapHotspot from './MapHotspot.vue'
-
-const MapPointModal = defineAsyncComponent(() => import('../lightbox/MapPointModal.vue'))
 
 const props = defineProps({
   region: {
@@ -15,6 +16,7 @@ const props = defineProps({
 
 const { isOpen, payload, open, close } = useLightbox()
 const imageOpen = ref(false)
+const { messages } = useSiteI18n()
 
 const points = computed(() => props.region.hotspots || [])
 const selectedPoint = computed(() => payload.value)
@@ -28,7 +30,7 @@ function selectPoint(point) {
   <div class="grid min-h-0 gap-5 lg:grid-cols-[minmax(0,1.6fr)_minmax(18rem,0.8fr)]">
     <div class="relative min-h-[22rem] overflow-hidden rounded-[28px] border border-[rgba(84,46,23,0.12)] bg-[rgba(10,14,22,0.88)] shadow-paper">
       <img
-        :src="region.mapImage"
+        :src="withBase(region.mapImage)"
         :alt="region.name"
         class="h-full w-full object-cover"
         loading="lazy"
@@ -39,7 +41,7 @@ function selectPoint(point) {
 
       <div class="absolute inset-x-0 bottom-0 flex items-center justify-between gap-4 bg-gradient-to-t from-[rgba(7,9,14,0.88)] to-transparent px-4 pb-4 pt-12 text-parchment">
         <div>
-          <p class="text-xs uppercase tracking-[0.38em] text-parchment/60">interactive map</p>
+          <p class="text-xs uppercase tracking-[0.38em] text-parchment/60">{{ messages.map.interactiveKicker }}</p>
           <h3 class="mt-2 font-display text-2xl text-parchment">{{ region.name }}</h3>
         </div>
 
@@ -48,13 +50,13 @@ function selectPoint(point) {
           class="rounded-full border border-parchment/20 bg-white/10 px-4 py-2 text-sm tracking-[0.18em] transition hover:bg-white/15"
           @click="imageOpen = true"
         >
-          檢視全圖
+          {{ messages.map.viewFullImage }}
         </button>
       </div>
     </div>
 
     <aside class="paper-card paper-scroll rounded-[26px] p-5">
-      <p class="text-xs uppercase tracking-[0.36em] text-wine/55">hotspots</p>
+      <p class="text-xs uppercase tracking-[0.36em] text-wine/55">{{ messages.map.hotspotsKicker }}</p>
       <div class="mt-4 space-y-3">
         <button
           v-for="point in points"
@@ -71,10 +73,15 @@ function selectPoint(point) {
     </aside>
   </div>
 
-  <BaseLightbox v-model="imageOpen" :title="`${region.name} 全圖`" size="wide">
+  <BaseLightbox
+    v-model="imageOpen"
+    :title="`${region.name} ${messages.map.fullImageSuffix}`"
+    size="wide"
+    width-mode="fit"
+  >
     <img
-      :src="region.mapImage"
-      :alt="`${region.name} 全圖`"
+      :src="withBase(region.mapImage)"
+      :alt="`${region.name} ${messages.map.fullImageSuffix}`"
       class="w-full rounded-[22px] border border-[rgba(84,46,23,0.12)]"
       loading="lazy"
       decoding="async"

@@ -3,6 +3,23 @@ import typography from '@tailwindcss/typography'
 export default {
   content: ['./index.html', './src/**/*.{vue,js,md}'],
   theme: {
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: '1rem',
+        sm: '1.25rem',
+        lg: '1.5rem',
+        xl: '2rem',
+        '2xl': '2.5rem',
+      },
+      screens: {
+        sm: '640px',
+        md: '768px',
+        lg: '1024px',
+        xl: '1280px',
+        '2xl': '1440px',
+      },
+    },
     extend: {
       colors: {
         ink: '#31180d',
@@ -27,9 +44,6 @@ export default {
           'radial-gradient(circle at 20% 20%, rgba(255, 239, 196, 0.18), transparent 0 28%), radial-gradient(circle at 80% 12%, rgba(141, 163, 255, 0.18), transparent 0 18%), radial-gradient(circle at 52% 36%, rgba(255, 240, 203, 0.16), transparent 0 20%), linear-gradient(180deg, #090c14 0%, #12192a 52%, #171118 100%)',
         parchment:
           'linear-gradient(180deg, rgba(255, 251, 239, 0.88), rgba(234, 212, 175, 0.96)), radial-gradient(circle at top, rgba(255, 255, 255, 0.45), transparent 32%)',
-      },
-      maxWidth: {
-        shell: '84rem',
       },
       animation: {
         drift: 'drift 14s ease-in-out infinite alternate',

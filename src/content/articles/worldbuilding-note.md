@@ -4,6 +4,7 @@ date: 2026-05-29
 tags: [地圖, 王國]
 summary: 以地圖和王權制度為例，說明之後如何把文章系統與設定頁互相串連。
 cover: /image/articles/worldbuilding-note.svg
+line: lore
 status: public
 ---
 

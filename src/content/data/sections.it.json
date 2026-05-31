@@ -1,0 +1,149 @@
+{
+  "terms": {
+    "eyebrow": "Impostazione del Mondo",
+    "title": "Termini e Concetti Base",
+    "intro": "Quando le pagine di ambientazione diventano guidate dai dati, ampliare il glossario richiede solo nuovi record e non nuovi componenti.",
+    "items": [
+      {
+        "title": "Vecchio Calendario",
+        "subtitle": "Calendario Imperiale",
+        "summary": "Il sistema cronologico del Primo Impero, oggi conservato soprattutto in contesti accademici e religiosi."
+      },
+      {
+        "title": "Fuoco Celeste",
+        "subtitle": "Skyfire",
+        "summary": "Termine generico per fratture del cielo, piogge di fuoco e presagi anomali collegati."
+      },
+      {
+        "title": "Rotolo d Atlante",
+        "subtitle": "Atlas Scroll",
+        "summary": "Un rotolo che unisce mappe, registri fiscali e strade militari, usato come mezzo principale di riferimento incrociato."
+      }
+    ]
+  },
+  "religions": {
+    "eyebrow": "Sistemi di Fede",
+    "title": "Religioni e Rituali",
+    "intro": "Questa pagina riserva spazio a sette, festività e tabù, così potrà poi collegarsi a immagini, mappe e timeline.",
+    "items": [
+      {
+        "title": "Santuario delle Ali di Brace",
+        "subtitle": "Fuoco e Rivelazione",
+        "summary": "Una fede incentrata sulle braci e sui presagi lasciati dai messaggeri alati, con incenso e bracieri nei rituali."
+      },
+      {
+        "title": "Ordine dello Specchio Lunare",
+        "subtitle": "Specchio e Giuramento",
+        "summary": "Crede che la luce lunare riveli la verità dietro ogni promessa, perciò il suo clero testimonia spesso nei negoziati."
+      },
+      {
+        "title": "Lamento della Marea Profonda",
+        "subtitle": "Mare e Memoria",
+        "summary": "Le città costiere usano canti e vetri rituali per ricordare i morti e custodire le rotte del mare."
+      }
+    ]
+  },
+  "organizations": {
+    "eyebrow": "Reti di Potere",
+    "title": "Ordini e Istituzioni",
+    "intro": "Questa sezione potrà poi collegare organizzazioni, personaggi, luoghi e articoli tramite tag condivisi.",
+    "items": [
+      {
+        "title": "Ordine del Fuoco Radioso",
+        "subtitle": "Stelle e Presagi",
+        "summary": "Una fazione erudita che studia i mutamenti celesti attraverso antichi calendari, carte stellari e riti del fuoco."
+      },
+      {
+        "title": "Consiglio dei Sette Seggi",
+        "subtitle": "Centro del Governo Presente",
+        "summary": "Una struttura politica formata da rappresentanti reali, religiosi e mercantili per mantenere l ordine attuale."
+      },
+      {
+        "title": "Cavalieri Silvani",
+        "subtitle": "Cavalleria di Frontiera di Trailan",
+        "summary": "Una forza mobile che pattuglia i passi boschivi e gestisce i negoziati con la frontiera settentrionale."
+      }
+    ]
+  },
+  "races": {
+    "eyebrow": "Popoli del Mondo",
+    "title": "Razze e Stirpi",
+    "intro": "La prima fase mantiene questa pagina in formato card, con spazio per future sottopagine, statistiche e personaggi collegati.",
+    "items": [
+      {
+        "slug": "humans",
+        "title": "Umani",
+        "subtitle": "Città del Giuramento",
+        "summary": "Il popolo più diffuso del mondo, con la maggiore varietà politica e culturale.",
+        "paragraphs": [
+          "Le città umane si estendono tra pianure, coste e antiche strade imperiali, perciò usanze e forme di governo cambiano molto da regione a regione. Dalle foreste di Trailan alle città della Torre Campanaria, trattati, tasse e vie militari definiscono il rapporto tra i regni umani.",
+          "La loro forza sta nella capacità di espansione e nell elasticità delle istituzioni, ma proprio per questo sono soggetti anche a rapidi mutamenti politici. Molti registri regali, atlanti e archivi giuridici del mondo sono mantenuti da studiosi e scribi umani."
+        ]
+      },
+      {
+        "slug": "moonborn",
+        "title": "Lunari",
+        "subtitle": "Figli dello Specchio",
+        "summary": "Noti per culture fondate su memoria e giuramento, spesso presenti nelle istituzioni religiose e giudiziarie.",
+        "paragraphs": [
+          "I Lunari considerano le parole giurate come sostanza viva e credono che la luce della luna conservi l intenzione reale di chi parla. Per questo compaiono spesso come testimoni nei rituali, nei tribunali e nella diplomazia.",
+          "I loro insediamenti sorgono di frequente vicino a laghi specchiati, santuari di pietra o alture aperte al cielo notturno. Agli occhi degli stranieri sembrano distanti, ma all interno delle loro comunità sono profondamente legati da parentela, promessa e memoria."
+        ]
+      },
+      {
+        "slug": "stoneblood-clans",
+        "title": "Clan Sangue di Pietra",
+        "subtitle": "Deep Forge Clans",
+        "summary": "Maestri di officine sotterranee e rotte minerarie, fondamentali nelle terre montane di confine.",
+        "paragraphs": [
+          "I Clan Sangue di Pietra abitano tra sale montane e forge profonde, con una conoscenza di vene minerarie, acque sotterranee ed eco della roccia che nessun altro popolo possiede. Le loro officine forgiano armi, rotaie e meccanismi di sigillo indispensabili ai confini montani.",
+          "Sul piano politico preferiscono il governo dei clan e dei consigli di forgia, evitando di sottomettersi facilmente alle corone esterne. Ottenere il loro sostegno richiede di solito lunghi accordi commerciali, difesa comune dei passi o il rinnovo di giuramenti molto antichi."
+        ]
+      }
+    ]
+  },
+  "powers": {
+    "eyebrow": "Archivi di Sovranità",
+    "title": "Poteri e Blocchi Territoriali",
+    "intro": "Questa pagina riserva sezioni a governi, trattati, eserciti e commercio, così in futuro si potranno aggiungere filtri.",
+    "items": [
+      {
+        "title": "Rete dei Lealisti del Primo Impero",
+        "subtitle": "Archive Loyalists",
+        "summary": "Un alleanza fluida ancora centrata sulla legalità imperiale e sulla gerarchia della vecchia nobiltà."
+      },
+      {
+        "title": "Casa Reale di Trailan",
+        "subtitle": "Corona della Foresta",
+        "summary": "Controlla le foreste orientali e le vie minerarie, privilegiando difesa di confine e commerci a pedaggio."
+      },
+      {
+        "title": "Patto Mercantile della Torre Campanaria",
+        "subtitle": "Bell Market Compact",
+        "summary": "Una coalizione di gilde cittadine che influenza tasse, rotte marittime e negoziati del consiglio."
+      }
+    ]
+  },
+  "credits": {
+    "eyebrow": "Gestione degli Asset",
+    "title": "Crediti e Regole di Nomenclatura",
+    "intro": "Prima del lancio, raccogli mappe, illustrazioni e sfondi sotto public/image e mantieni un registro crediti corrispondente.",
+    "items": [
+      {
+        "title": "Asset di Sfondo",
+        "subtitle": "Backgrounds",
+        "summary": "Usa prefissi come desk-, parchment- e starfield-, e registra sempre fonte e licenza."
+      },
+      {
+        "title": "Asset delle Mappe",
+        "subtitle": "Maps",
+        "summary": "Conserva mappa del mondo e mappe regionali in cartelle separate, mantenendo coerenti i nomi di miniature e versioni complete."
+      },
+      {
+        "title": "Copertine Articoli",
+        "subtitle": "Article Covers",
+        "summary": "Allinea i nomi file delle copertine agli slug degli articoli, così il frontmatter Markdown può richiamarli direttamente."
+      }
+    ]
+  }
+}

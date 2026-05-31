@@ -1,0 +1,44 @@
+[
+  {
+    "dynasty": "Morningstar Dynasty",
+    "ruler": "Aesfan I",
+    "reign": "Regnal 1 - 23",
+    "seat": "Rondich",
+    "notes": "Unified the seven cities and established the first imperial code and measurement system."
+  },
+  {
+    "dynasty": "Morningstar Dynasty",
+    "ruler": "Aesfan II",
+    "reign": "Regnal 23 - 61",
+    "seat": "Rondich",
+    "notes": "Expanded the archive towers and observatory, formally integrating astronomers into the court."
+  },
+  {
+    "dynasty": "Grey Tide Dynasty",
+    "ruler": "Queen Noshir",
+    "reign": "Regnal 61 - 104",
+    "seat": "Whitewave Harbor",
+    "notes": "Opened ocean trade routes and established the southern salt-and-iron tax system."
+  },
+  {
+    "dynasty": "Grey Tide Dynasty",
+    "ruler": "Simon IV",
+    "reign": "Regnal 104 - 157",
+    "seat": "Rondich",
+    "notes": "Commissioned the great geographic survey and military atlas of the realm."
+  },
+  {
+    "dynasty": "Fractured Crown Regency",
+    "ruler": "Regent Duke Mihelen",
+    "reign": "Regnal 348 - 354",
+    "seat": "Frosthold",
+    "notes": "Controlled the northern grain route during the civil war and signed a provisional border accord with Trailan."
+  },
+  {
+    "dynasty": "New Calendar Council",
+    "ruler": "Speaker of the Seven Seats",
+    "reign": "New Calendar 1 - Present",
+    "seat": "Bell Tower City",
+    "notes": "The current governing system, where kingship and religion are jointly supervised by the council."
+  }
+]

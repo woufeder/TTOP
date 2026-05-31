@@ -4,6 +4,7 @@ date: 2026-05-31
 tags: [世界觀, 設定]
 summary: 這裡是文章列表顯示的摘要，示範 Markdown 文章如何被靜態編譯進列表頁。
 cover: /image/articles/first-note.svg
+line: lore
 status: public
 ---
 

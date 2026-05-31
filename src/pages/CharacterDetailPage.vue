@@ -3,12 +3,15 @@ import { computed } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
 import AppShell from '../components/layout/AppShell.vue'
 import ParchmentPanel from '../components/layout/ParchmentPanel.vue'
-import characters from '../content/data/characters.json'
+import { useSiteI18n } from '../composables/useSiteI18n'
+import { getLocalizedContent } from '../utils/content'
 
 const route = useRoute()
+const { locale, localeRoute, messages } = useSiteI18n()
+const characters = computed(() => getLocalizedContent('characters', locale.value))
 
 const character = computed(() =>
-  characters.find((item) => item.slug === String(route.params.slug || '')),
+  characters.value.find((item) => item.slug === String(route.params.slug || '')),
 )
 </script>
 
@@ -17,14 +20,14 @@ const character = computed(() =>
     <ParchmentPanel
       v-if="character"
       variant="wide"
-      eyebrow="Character Dossier"
+      :eyebrow="messages.characterDetail.eyebrow"
       :title="character.name"
       :description="character.summary"
     >
       <div class="grid gap-6 xl:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)]">
         <section class="paper-card rounded-[26px] p-5 sm:p-6">
           <div class="flex items-center gap-4">
-            <span class="flex h-20 w-20 items-center justify-center rounded-full border border-oldGold/30 bg-white/35 font-display text-4xl text-wine">
+            <span class="keep-round flex h-20 w-20 items-center justify-center rounded-full border border-oldGold/30 bg-white/35 font-display text-4xl text-wine">
               {{ character.name.slice(0, 1) }}
             </span>
             <div>
@@ -50,7 +53,7 @@ const character = computed(() =>
 
         <section class="space-y-4">
           <article class="paper-card rounded-[26px] p-5 sm:p-6">
-            <p class="text-xs uppercase tracking-[0.34em] text-wine/55">profile</p>
+            <p class="text-xs uppercase tracking-[0.34em] text-wine/55">{{ messages.characterDetail.profileKicker }}</p>
             <div class="mt-4 grid gap-3 sm:grid-cols-3">
               <div
                 v-for="connection in character.connections"
@@ -64,17 +67,17 @@ const character = computed(() =>
           </article>
 
           <article class="paper-card rounded-[26px] p-5 sm:p-6">
-            <p class="text-xs uppercase tracking-[0.34em] text-wine/55">dossier</p>
+            <p class="text-xs uppercase tracking-[0.34em] text-wine/55">{{ messages.characterDetail.dossierKicker }}</p>
             <div class="mt-4 space-y-4 text-sm leading-8 text-ink/76 sm:text-base">
               <p v-for="paragraph in character.body" :key="paragraph">{{ paragraph }}</p>
             </div>
           </article>
 
           <RouterLink
-            to="/characters"
+            :to="localeRoute('characters')"
             class="inline-flex rounded-full bg-wine px-5 py-3 text-sm tracking-[0.18em] text-parchment transition hover:bg-[#5e171d]"
           >
-            返回人物志
+            {{ messages.characterDetail.backToList }}
           </RouterLink>
         </section>
       </div>
@@ -83,15 +86,15 @@ const character = computed(() =>
     <ParchmentPanel
       v-else
       variant="compact"
-      eyebrow="Missing Character"
-      title="找不到這位角色"
-      description="請確認 characters.json 內已建立對應 slug。"
+      :eyebrow="messages.characterDetail.missingEyebrow"
+      :title="messages.characterDetail.missingTitle"
+      :description="messages.characterDetail.missingDescription"
     >
       <RouterLink
-        to="/characters"
+        :to="localeRoute('characters')"
         class="inline-flex rounded-full bg-wine px-5 py-3 text-sm tracking-[0.18em] text-parchment transition hover:bg-[#5e171d]"
       >
-        返回人物志
+        {{ messages.characterDetail.backToList }}
       </RouterLink>
     </ParchmentPanel>
   </AppShell>

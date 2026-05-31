@@ -1,0 +1,79 @@
+[
+  {
+    "era": "Età Mitica",
+    "year": "Prima Scrittura Anno 1",
+    "label": "Creazione del Mondo",
+    "summary": "Le stelle si raccolsero dal mare di polvere e i sette cieli si specchiarono per la prima volta sull acqua.",
+    "details": [
+      "La leggenda racconta che il mondo non nacque come terra e mare separati, ma come una deriva di nebbia e polvere stellare. Solo quando i sette cieli si specchiarono sull acqua comparvero direzione, stagione e marea.",
+      "Calendari e rituali successivi considerarono questo istante come il primo momento davvero registrabile dell esistenza, motivo per cui molte scuole recitano ancora i canti della creazione a ogni inizio d anno."
+    ],
+    "detailSlug": "myth-origin"
+  },
+  {
+    "era": "Età Mitica",
+    "year": "Prima Scrittura 87",
+    "label": "Discesa delle Ali di Brace",
+    "summary": "I primi messaggeri piumati di brace furono registrati nei fiordi del nord, lasciando rituali e calendari.",
+    "details": [
+      "Sulle pareti dei fiordi settentrionali restano ancora le incisioni più antiche dedicate alle Ali di Brace. Esse descrivono non solo i messaggeri, ma anche cicli stagionali legati a maree e posizioni stellari.",
+      "Per molte tradizioni religiose questo evento segna il vero inizio dell osservazione del cielo e dell ordine rituale."
+    ],
+    "detailSlug": "ember-arrival"
+  },
+  {
+    "era": "Alba Imperiale",
+    "year": "Anno Regale 1",
+    "label": "Fondazione del Primo Impero",
+    "summary": "Le città di Unna giurarono un patto di sangue e fondarono il consiglio imperiale sull altopiano di Rondich.",
+    "details": [
+      "Sull altare di Rondich, le città di Unna confermarono una legge comune e il controllo condiviso delle strade militari attraverso giuramenti di sangue, dando così vita a un consiglio capace di governare un dominio molto più vasto di una singola città.",
+      "I registri fiscali e i codici di quest epoca restano ancora oggi una delle basi più solide per studiare amministrazione e geografia imperiale."
+    ],
+    "detailSlug": "unna-founding"
+  },
+  {
+    "era": "Alba Imperiale",
+    "year": "Anno Regale 132",
+    "label": "Completamento dell Archivio Celeste",
+    "summary": "Geografia, religione e cartografia astrale furono raccolte in un archivio canonico condiviso dalle scuole successive.",
+    "details": [
+      "L Archivio Celeste non era soltanto una torre, ma un intero sistema di scriptoria, osservatori e depositi creati per centralizzare conoscenze prima disperse tra province e ordini locali.",
+      "Quasi tutte le scuole posteriori ereditarono almeno una parte del proprio canone dalle edizioni compilate in questo archivio."
+    ],
+    "detailSlug": "sky-archive"
+  },
+  {
+    "era": "Età delle Corone Spezzate",
+    "year": "Anno Regale 348",
+    "label": "Guerra dei Due Soli",
+    "summary": "Una crisi di successione spezzò il regno e permise al Regno di Trailan di separarsi.",
+    "details": [
+      "La guerra nacque da una disputa dinastica ma si trasformò presto in uno scontro per il controllo delle armate, dei governatori e delle strade di confine. Da quel momento il centro imperiale non recuperò mai più la propria forza originaria.",
+      "La cultura militare boschiva e la dottrina di frontiera di Trailan furono modellate direttamente dalle condizioni di questo conflitto."
+    ],
+    "detailSlug": "sundered-crowns"
+  },
+  {
+    "era": "Età delle Corone Spezzate",
+    "year": "Anno Regale 366",
+    "label": "Pace della Campana d Ossidiana",
+    "summary": "Sei fazioni religiose firmarono un cessate il fuoco nella Città della Torre Campanaria e reimpostarono il calendario.",
+    "details": [
+      "La pace non fu solo un cessate il fuoco. Ridistribuì anche diritti di testimonianza, autorità rituale e potere di arbitrato tra fazioni religiose e oligarchie cittadine.",
+      "L adozione del nuovo calendario sancì di fatto la fine irreversibile dell età imperiale e l inizio di un ordine storico differente."
+    ],
+    "detailSlug": "obsidian-bell-treaty"
+  },
+  {
+    "era": "Secolo Presente",
+    "year": "Nuovo Calendario 27",
+    "label": "Incendio del Nord",
+    "summary": "La frattura del cielo si riaprì, riaccendendo la ricerca di profezie e mappe perdute.",
+    "details": [
+      "L Incendio del Nord riportò profezie dimenticate al centro dell attenzione politica e accademica. Frammenti di mappe prima liquidati come mito tornarono a essere considerati informazioni vive.",
+      "L evento non è davvero terminato: è il punto in cui cronaca, atlante e narrazione cominciano nuovamente a incrociarsi nel presente."
+    ],
+    "detailSlug": "north-flare"
+  }
+]

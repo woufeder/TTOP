@@ -22,9 +22,9 @@ const props = defineProps({
 
 const variantClass = computed(() => {
   const classes = {
-    normal: 'max-w-5xl',
-    wide: 'max-w-6xl',
-    map: 'max-w-[min(82rem,100%)]',
+    normal: 'max-w-none',
+    wide: 'max-w-none',
+    map: 'max-w-none',
     compact: 'max-w-3xl',
   }
 

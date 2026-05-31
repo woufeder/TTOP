@@ -1,27 +1,33 @@
 <script setup>
+import { computed } from 'vue'
 import AppShell from '../components/layout/AppShell.vue'
 import ParchmentPanel from '../components/layout/ParchmentPanel.vue'
 import Timeline from '../components/world/Timeline.vue'
-import timeline from '../content/data/timeline.json'
+import { useSiteI18n } from '../composables/useSiteI18n'
+import { getLocalizedContent } from '../utils/content'
+
+const { locale, messages } = useSiteI18n()
+const timeline = computed(() => getLocalizedContent('timeline', locale.value))
 </script>
 
 <template>
   <AppShell>
     <ParchmentPanel
-      eyebrow="Chronicle"
-      title="世界編年史"
-      description="桌機使用水平時間軸，手機收斂成垂直時間軸。後續只要補 timeline.json 就能擴充事件。"
+      variant="wide"
+      :eyebrow="messages.timeline.eyebrow"
+      :title="messages.timeline.title"
+      :description="messages.timeline.description"
     >
-      <section class="paper-card rounded-[26px] p-5 sm:p-6">
-        <p class="text-xs uppercase tracking-[0.36em] text-wine/55">timeline data</p>
-        <h2 class="mt-3 font-display text-3xl text-ink">神話時代到現世紀的節點</h2>
+      <section class="border-b border-[rgba(84,46,23,0.1)] pb-5">
+        <p class="text-xs uppercase tracking-[0.36em] text-wine/55">{{ messages.timeline.introKicker }}</p>
+        <h2 class="mt-3 font-display text-3xl text-ink">{{ messages.timeline.introTitle }}</h2>
         <p class="mt-4 max-w-3xl text-sm leading-8 text-ink/76 sm:text-base">
-          每一則節點都可以擴充 detailSlug，未來對應到更完整的長文、角色或地圖點說明。
+          {{ messages.timeline.introBody }}
         </p>
       </section>
 
       <div class="mt-6">
-        <Timeline :events="timeline" />
+        <Timeline :events="timeline" :messages="messages.timeline" />
       </div>
     </ParchmentPanel>
   </AppShell>

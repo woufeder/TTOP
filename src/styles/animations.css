@@ -1,0 +1,473 @@
+.route-dissolve-enter-active {
+  z-index: 2;
+  animation: route-dissolve-in 800ms ease both;
+}
+
+.route-dissolve-leave-active {
+  z-index: 1;
+  pointer-events: none;
+  animation: route-dissolve-out 500ms ease both;
+}
+
+.lightbox-overlay-enter-active {
+  animation: lightbox-overlay-in 240ms ease both;
+}
+
+.lightbox-overlay-leave-active {
+  animation: lightbox-overlay-out 220ms ease both;
+}
+
+.scroll-lightbox-enter-active {
+  will-change: clip-path, transform, opacity, filter;
+  animation: scroll-unfurl-in 680ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.scroll-lightbox-leave-active {
+  will-change: clip-path, transform, opacity, filter;
+  animation: scroll-unfurl-out 420ms cubic-bezier(0.4, 0, 1, 1) both;
+}
+
+.scroll-lightbox-enter-active .lightbox-roller-top {
+  animation: roller-top-in 680ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.scroll-lightbox-enter-active .lightbox-roller-bottom {
+  animation: roller-bottom-in 680ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.scroll-lightbox-leave-active .lightbox-roller-top {
+  animation: roller-top-out 420ms cubic-bezier(0.4, 0, 1, 1) both;
+}
+
+.scroll-lightbox-leave-active .lightbox-roller-bottom {
+  animation: roller-bottom-out 420ms cubic-bezier(0.4, 0, 1, 1) both;
+}
+
+.scroll-lightbox-enter-active .lightbox-scroll-header {
+  animation: scroll-header-in 540ms 120ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.scroll-lightbox-enter-active .lightbox-scroll-body {
+  animation: scroll-body-in 560ms 170ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.scroll-lightbox-leave-active .lightbox-scroll-header {
+  animation: scroll-header-out 220ms cubic-bezier(0.4, 0, 1, 1) both;
+}
+
+.scroll-lightbox-leave-active .lightbox-scroll-body {
+  animation: scroll-body-out 220ms cubic-bezier(0.4, 0, 1, 1) both;
+}
+
+.folio-lightbox-enter-active {
+  will-change: clip-path, transform, opacity, filter;
+  animation: folio-unfurl-in 680ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.folio-lightbox-leave-active {
+  will-change: clip-path, transform, opacity, filter;
+  animation: folio-unfurl-out 420ms cubic-bezier(0.4, 0, 1, 1) both;
+}
+
+.folio-lightbox-enter-active .lightbox-roller-left {
+  animation: roller-left-in 680ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.folio-lightbox-enter-active .lightbox-roller-right {
+  animation: roller-right-in 680ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.folio-lightbox-leave-active .lightbox-roller-left {
+  animation: roller-left-out 420ms cubic-bezier(0.4, 0, 1, 1) both;
+}
+
+.folio-lightbox-leave-active .lightbox-roller-right {
+  animation: roller-right-out 420ms cubic-bezier(0.4, 0, 1, 1) both;
+}
+
+.folio-lightbox-enter-active .lightbox-scroll-header {
+  animation: folio-header-in 520ms 120ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.folio-lightbox-enter-active .lightbox-scroll-body {
+  animation: folio-body-in 560ms 150ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.folio-lightbox-leave-active .lightbox-scroll-header {
+  animation: folio-header-out 220ms cubic-bezier(0.4, 0, 1, 1) both;
+}
+
+.folio-lightbox-leave-active .lightbox-scroll-body {
+  animation: folio-body-out 220ms cubic-bezier(0.4, 0, 1, 1) both;
+}
+
+@keyframes route-dissolve-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes route-dissolve-out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes lightbox-overlay-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes lightbox-overlay-out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes scroll-unfurl-in {
+  0% {
+    opacity: 0.4;
+    clip-path: inset(49% 0 49% 0 round 0.25rem);
+    transform: perspective(1200px) scaleY(0.04);
+    filter: blur(8px) saturate(0.74);
+  }
+
+  55% {
+    opacity: 1;
+    clip-path: inset(16% 0 16% 0 round 0.25rem);
+    transform: perspective(1200px) scaleY(0.48);
+    filter: blur(1px) saturate(0.92);
+  }
+
+  100% {
+    opacity: 1;
+    clip-path: inset(0 0 0 0 round 0.25rem);
+    transform: perspective(1200px) scaleY(1);
+    filter: blur(0) saturate(1);
+  }
+}
+
+@keyframes scroll-unfurl-out {
+  0% {
+    opacity: 1;
+    clip-path: inset(0 0 0 0 round 0.25rem);
+    transform: perspective(1200px) scaleY(1);
+    filter: blur(0) saturate(1);
+  }
+
+  100% {
+    opacity: 0.35;
+    clip-path: inset(49% 0 49% 0 round 0.25rem);
+    transform: perspective(1200px) scaleY(0.04);
+    filter: blur(8px) saturate(0.74);
+  }
+}
+
+@keyframes folio-unfurl-in {
+  0% {
+    opacity: 0.4;
+    clip-path: inset(0 49% 0 49% round 0.25rem);
+    transform: perspective(1200px) scaleX(0.04);
+    filter: blur(8px) saturate(0.74);
+  }
+
+  55% {
+    opacity: 1;
+    clip-path: inset(0 16% 0 16% round 0.25rem);
+    transform: perspective(1200px) scaleX(0.48);
+    filter: blur(1px) saturate(0.92);
+  }
+
+  100% {
+    opacity: 1;
+    clip-path: inset(0 0 0 0 round 0.25rem);
+    transform: perspective(1200px) scaleX(1);
+    filter: blur(0) saturate(1);
+  }
+}
+
+@keyframes folio-unfurl-out {
+  0% {
+    opacity: 1;
+    clip-path: inset(0 0 0 0 round 0.25rem);
+    transform: perspective(1200px) scaleX(1);
+    filter: blur(0) saturate(1);
+  }
+
+  100% {
+    opacity: 0.35;
+    clip-path: inset(0 49% 0 49% round 0.25rem);
+    transform: perspective(1200px) scaleX(0.04);
+    filter: blur(8px) saturate(0.74);
+  }
+}
+
+@keyframes roller-top-in {
+  from {
+    opacity: 0.3;
+    transform: translate3d(0, 12rem, 0) scaleX(0.94);
+    filter: blur(4px);
+  }
+
+  to {
+    opacity: 0.96;
+    transform: translate3d(0, 0, 0) scaleX(1);
+    filter: blur(0);
+  }
+}
+
+@keyframes roller-bottom-in {
+  from {
+    opacity: 0.3;
+    transform: translate3d(0, -12rem, 0) scaleX(0.94);
+    filter: blur(4px);
+  }
+
+  to {
+    opacity: 0.96;
+    transform: translate3d(0, 0, 0) scaleX(1);
+    filter: blur(0);
+  }
+}
+
+@keyframes roller-top-out {
+  from {
+    opacity: 0.96;
+    transform: translate3d(0, 0, 0) scaleX(1);
+    filter: blur(0);
+  }
+
+  to {
+    opacity: 0.25;
+    transform: translate3d(0, 9rem, 0) scaleX(0.94);
+    filter: blur(4px);
+  }
+}
+
+@keyframes roller-bottom-out {
+  from {
+    opacity: 0.96;
+    transform: translate3d(0, 0, 0) scaleX(1);
+    filter: blur(0);
+  }
+
+  to {
+    opacity: 0.25;
+    transform: translate3d(0, -9rem, 0) scaleX(0.94);
+    filter: blur(4px);
+  }
+}
+
+@keyframes roller-left-in {
+  from {
+    opacity: 0.3;
+    transform: translate3d(12rem, 0, 0) scaleY(0.94);
+    filter: blur(4px);
+  }
+
+  to {
+    opacity: 0.96;
+    transform: translate3d(0, 0, 0) scaleY(1);
+    filter: blur(0);
+  }
+}
+
+@keyframes roller-right-in {
+  from {
+    opacity: 0.3;
+    transform: translate3d(-12rem, 0, 0) scaleY(0.94);
+    filter: blur(4px);
+  }
+
+  to {
+    opacity: 0.96;
+    transform: translate3d(0, 0, 0) scaleY(1);
+    filter: blur(0);
+  }
+}
+
+@keyframes roller-left-out {
+  from {
+    opacity: 0.96;
+    transform: translate3d(0, 0, 0) scaleY(1);
+    filter: blur(0);
+  }
+
+  to {
+    opacity: 0.25;
+    transform: translate3d(9rem, 0, 0) scaleY(0.94);
+    filter: blur(4px);
+  }
+}
+
+@keyframes roller-right-out {
+  from {
+    opacity: 0.96;
+    transform: translate3d(0, 0, 0) scaleY(1);
+    filter: blur(0);
+  }
+
+  to {
+    opacity: 0.25;
+    transform: translate3d(-9rem, 0, 0) scaleY(0.94);
+    filter: blur(4px);
+  }
+}
+
+@keyframes scroll-header-in {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -24px, 0);
+    filter: blur(6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    filter: blur(0);
+  }
+}
+
+@keyframes scroll-body-in {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 28px, 0);
+    filter: blur(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    filter: blur(0);
+  }
+}
+
+@keyframes scroll-header-out {
+  from {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    filter: blur(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, -18px, 0);
+    filter: blur(6px);
+  }
+}
+
+@keyframes scroll-body-out {
+  from {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    filter: blur(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, 22px, 0);
+    filter: blur(6px);
+  }
+}
+
+@keyframes folio-header-in {
+  from {
+    opacity: 0;
+    transform: translate3d(-26px, 0, 0);
+    filter: blur(6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    filter: blur(0);
+  }
+}
+
+@keyframes folio-body-in {
+  from {
+    opacity: 0;
+    transform: translate3d(30px, 0, 0);
+    filter: blur(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    filter: blur(0);
+  }
+}
+
+@keyframes folio-header-out {
+  from {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    filter: blur(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(-18px, 0, 0);
+    filter: blur(6px);
+  }
+}
+
+@keyframes folio-body-out {
+  from {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    filter: blur(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(22px, 0, 0);
+    filter: blur(6px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .route-dissolve-enter-active,
+  .route-dissolve-leave-active,
+  .lightbox-overlay-enter-active,
+  .lightbox-overlay-leave-active,
+  .scroll-lightbox-enter-active,
+  .scroll-lightbox-leave-active,
+  .scroll-lightbox-enter-active .lightbox-roller-top,
+  .scroll-lightbox-enter-active .lightbox-roller-bottom,
+  .scroll-lightbox-leave-active .lightbox-roller-top,
+  .scroll-lightbox-leave-active .lightbox-roller-bottom,
+  .scroll-lightbox-enter-active .lightbox-scroll-header,
+  .scroll-lightbox-enter-active .lightbox-scroll-body,
+  .scroll-lightbox-leave-active .lightbox-scroll-header,
+  .scroll-lightbox-leave-active .lightbox-scroll-body,
+  .folio-lightbox-enter-active,
+  .folio-lightbox-leave-active,
+  .folio-lightbox-enter-active .lightbox-roller-left,
+  .folio-lightbox-enter-active .lightbox-roller-right,
+  .folio-lightbox-leave-active .lightbox-roller-left,
+  .folio-lightbox-leave-active .lightbox-roller-right,
+  .folio-lightbox-enter-active .lightbox-scroll-header,
+  .folio-lightbox-enter-active .lightbox-scroll-body,
+  .folio-lightbox-leave-active .lightbox-scroll-header,
+  .folio-lightbox-leave-active .lightbox-scroll-body {
+    animation-duration: 1ms !important;
+  }
+}

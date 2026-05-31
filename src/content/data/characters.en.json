@@ -1,0 +1,65 @@
+[
+  {
+    "slug": "ariane-of-ember",
+    "name": "Ariane",
+    "title": "Ember Astronomer",
+    "faction": "Order of Radiant Fire",
+    "race": "Human",
+    "era": "New Calendar 27",
+    "summary": "A young court astronomer rebuilding the lost calendar after the northern firefall.",
+    "quote": "Every scorched map is only a sky chart that no one has read correctly yet.",
+    "traits": ["Astrocartography", "Calendar decoding", "Northern surveys"],
+    "connections": [
+      { "label": "Active Region", "value": "Northern marches of the First Empire" },
+      { "label": "Faction", "value": "Order of Radiant Fire" },
+      { "label": "Key Place", "value": "Sky Archive Tower" }
+    ],
+    "body": [
+      "Ariane began as a copyist apprentice in the lower archive, then rose after proving she could read faded star charts on burned parchment.",
+      "While cataloging the debris that arrived after the firefall of New Calendar 27, she reconstructed an abandoned military road leading toward the lost frontier.",
+      "Character pages can later expand with portraits, linked places, related characters, and article references."
+    ]
+  },
+  {
+    "slug": "soren-trailan",
+    "name": "Soren",
+    "title": "Captain of the Trailan Forest Riders",
+    "faction": "Royal House of Trailan",
+    "race": "Human",
+    "era": "New Calendar 24",
+    "summary": "A border cavalry commander who knows the hidden roads around Stag Pass and the northern tribes.",
+    "quote": "The forest never lies. Only people hide the truth on maps.",
+    "traits": ["Border patrol", "Forest warfare", "Treaty diplomacy"],
+    "connections": [
+      { "label": "Active Region", "value": "Trailan Kingdom" },
+      { "label": "Faction", "value": "Royal Forest Riders" },
+      { "label": "Key Place", "value": "Stag Pass" }
+    ],
+    "body": [
+      "Soren comes from a family that has guarded Stag Pass for generations and remembers every woodland trail and watershed by oral tradition.",
+      "During negotiations with the northern tribes, he also tracks signs that imperial loyalists are rebuilding influence along the border.",
+      "This page can later connect to related map markers, timeline entries, and long-form Markdown articles."
+    ]
+  },
+  {
+    "slug": "vesra-bellkeeper",
+    "name": "Vesra",
+    "title": "Bell Archive Keeper",
+    "faction": "Council of the Bell Tower City",
+    "race": "Moonborn",
+    "era": "New Calendar 27",
+    "summary": "Keeper of ceasefire records and religious judgments, with access to the hidden files of the Seven Seats.",
+    "quote": "History gains weight not from who writes it, but from who is allowed to lock it away.",
+    "traits": ["Legal transcription", "Council testimony", "Religious adjudication"],
+    "connections": [
+      { "label": "Active Region", "value": "Bell Tower City" },
+      { "label": "Faction", "value": "Seven Seats Council" },
+      { "label": "Key Place", "value": "The Black Bell Tower" }
+    ],
+    "body": [
+      "Vesra preserves every copy of the accords signed after the Black Bell armistice and therefore knows the real limits of several rival factions.",
+      "She exchanges secret letters with Ariane, trading clues between the northern firefall and the fractured crown documents.",
+      "Character data can grow with aliases, sigils, related articles, and galleries without changing the page structure."
+    ]
+  }
+]

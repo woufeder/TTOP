@@ -20,8 +20,8 @@ import SiteHeader from './SiteHeader.vue'
 
     <SiteHeader />
 
-    <main class="relative z-10 flex min-h-0 flex-1 px-4 pb-4 pt-24 sm:px-6 lg:px-8">
-      <div class="mx-auto flex min-h-0 w-full max-w-shell">
+    <main class="relative z-10 flex min-h-0 flex-1 pb-4 pt-24">
+      <div class="container flex min-h-0 w-full">
         <slot />
       </div>
     </main>

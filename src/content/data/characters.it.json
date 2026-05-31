@@ -1,0 +1,65 @@
+[
+  {
+    "slug": "ariane-of-ember",
+    "name": "Ariane",
+    "title": "Astrologa delle Braci",
+    "faction": "Ordine del Fuoco Radioso",
+    "race": "Umana",
+    "era": "Nuovo Calendario 27",
+    "summary": "Una giovane astrologa di corte che ricostruisce il calendario perduto dopo l incendio del nord.",
+    "quote": "Ogni mappa bruciata è solo un cielo che nessuno ha ancora letto nel modo giusto.",
+    "traits": ["Cartografia astrale", "Decifrazione dei calendari", "Ricognizioni del nord"],
+    "connections": [
+      { "label": "Regione attiva", "value": "Marche settentrionali del Primo Impero" },
+      { "label": "Fazione", "value": "Ordine del Fuoco Radioso" },
+      { "label": "Luogo chiave", "value": "Torre dell Archivio Celeste" }
+    ],
+    "body": [
+      "Ariane iniziò come apprendista copista negli archivi inferiori, poi emerse quando dimostrò di saper leggere carte stellari sbiadite su pergamene bruciate.",
+      "Catalogando i frammenti arrivati dopo l incendio del Nuovo Calendario 27, ricostruì una vecchia strada militare verso la frontiera perduta.",
+      "Le pagine personaggio possono poi estendersi con ritratti, luoghi collegati, relazioni e riferimenti ad articoli."
+    ]
+  },
+  {
+    "slug": "soren-trailan",
+    "name": "Soren",
+    "title": "Capitano dei Cavalieri Silvani di Trailan",
+    "faction": "Casa Reale di Trailan",
+    "race": "Umano",
+    "era": "Nuovo Calendario 24",
+    "summary": "Un comandante di cavalleria di confine che conosce i sentieri nascosti del Passo del Cervo e delle tribù del nord.",
+    "quote": "La foresta non mente mai. Sono gli uomini a nascondere la verità sulle mappe.",
+    "traits": ["Pattuglia di confine", "Guerra nei boschi", "Diplomazia dei trattati"],
+    "connections": [
+      { "label": "Regione attiva", "value": "Regno di Trailan" },
+      { "label": "Fazione", "value": "Cavalieri Reali della Foresta" },
+      { "label": "Luogo chiave", "value": "Passo del Cervo" }
+    ],
+    "body": [
+      "La famiglia di Soren custodisce il Passo del Cervo da generazioni e conserva memoria orale di ogni sentiero e torrente dei boschi.",
+      "Durante i negoziati con le tribù del nord, osserva anche i segni del ritorno dei fedeli imperiali lungo il confine.",
+      "Questa pagina può poi collegarsi a punti mappa, eventi della timeline e articoli Markdown."
+    ]
+  },
+  {
+    "slug": "vesra-bellkeeper",
+    "name": "Vesra",
+    "title": "Custode dell Archivio della Campana",
+    "faction": "Consiglio della Città della Torre Campanaria",
+    "race": "Lunare",
+    "era": "Nuovo Calendario 27",
+    "summary": "Custode dei registri di armistizio e dei giudizi religiosi, con accesso ai dossier segreti dei Sette Seggi.",
+    "quote": "La storia pesa non per chi la scrive, ma per chi ha il potere di chiuderla a chiave.",
+    "traits": ["Trascrizione legale", "Testimonianze del consiglio", "Arbitrato religioso"],
+    "connections": [
+      { "label": "Regione attiva", "value": "Città della Torre Campanaria" },
+      { "label": "Fazione", "value": "Consiglio dei Sette Seggi" },
+      { "label": "Luogo chiave", "value": "Torre della Campana Nera" }
+    ],
+    "body": [
+      "Vesra conserva ogni copia degli accordi firmati dopo l armistizio della Campana Nera e conosce quindi i veri limiti delle fazioni rivali.",
+      "Scambia lettere segrete con Ariane, collegando l incendio del nord ai documenti della corona spezzata.",
+      "I dati dei personaggi possono crescere con alias, stemmi, articoli collegati e gallerie senza cambiare il layout della pagina."
+    ]
+  }
+]

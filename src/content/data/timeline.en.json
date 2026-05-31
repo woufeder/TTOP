@@ -1,0 +1,79 @@
+[
+  {
+    "era": "Mythic Age",
+    "year": "Before Script Year 1",
+    "label": "Creation of the World",
+    "summary": "The stars gathered from the dust sea, and the seven heavens were reflected upon the waters for the first time.",
+    "details": [
+      "Legend says the world began not as land and sea, but as a drifting tide of star-dust mist. Only when the seven heavens reflected upon the waters did direction, season, and tide become knowable things.",
+      "Later calendars and rites treat this moment as the first point at which existence could be recorded, which is why many schools still recite the creation passages at the beginning of each year."
+    ],
+    "detailSlug": "myth-origin"
+  },
+  {
+    "era": "Mythic Age",
+    "year": "Before Script 87",
+    "label": "Arrival of the Emberwing",
+    "summary": "The first ember-feather messengers were recorded in the northern fjords, bringing ritual and calendar lore.",
+    "details": [
+      "Stone walls in the northern fjords still preserve the earliest ember-wing markings. They describe not only the messengers themselves, but also a system of seasons tied to tides and star positions.",
+      "Many faith traditions therefore treat the Emberwing arrival as the true beginning of celestial observation and ritual order."
+    ],
+    "detailSlug": "ember-arrival"
+  },
+  {
+    "era": "Imperial Dawn",
+    "year": "Regnal Year 1",
+    "label": "Founding of the First Empire",
+    "summary": "The cities of Unna swore blood oaths and established the imperial council on the plateau of Rondich.",
+    "details": [
+      "On the oath platform of Rondich, the cities of Unna confirmed a shared legal order and military road system through blood pacts, then built a council meant to govern a much wider realm than any single city had ever ruled.",
+      "The tax rolls and statutes from this era remain the strongest surviving foundation for scholars studying imperial administration and geography."
+    ],
+    "detailSlug": "unna-founding"
+  },
+  {
+    "era": "Imperial Dawn",
+    "year": "Regnal Year 132",
+    "label": "Completion of the Sky Archive",
+    "summary": "Geography, religion, and star-mapping were gathered into a canonical archive shared by later schools.",
+    "details": [
+      "The Sky Archive was not a single tower alone, but an entire complex of scriptoria, observatories, and vaults built to centralize knowledge once scattered across provincial houses.",
+      "Nearly every later school of history, astronomy, or religion inherited some part of its canon from the Sky Archive's compiled editions."
+    ],
+    "detailSlug": "sky-archive"
+  },
+  {
+    "era": "Age of Fractured Crowns",
+    "year": "Regnal Year 348",
+    "label": "War of the Twin Suns",
+    "summary": "A succession crisis split the realm and allowed the Kingdom of Trailan to break away.",
+    "details": [
+      "The war began as a dispute over dynastic succession but soon became a contest over which armies, governors, and frontier roads would obey the crown. That fracture permanently weakened imperial central rule.",
+      "Trailan's later border doctrines and woodland military culture were shaped directly by the conditions of this conflict."
+    ],
+    "detailSlug": "sundered-crowns"
+  },
+  {
+    "era": "Age of Fractured Crowns",
+    "year": "Regnal Year 366",
+    "label": "Treaty of the Obsidian Bell",
+    "summary": "Six religious factions signed a ceasefire in Bell Tower City and reset the calendar.",
+    "details": [
+      "The treaty was more than a ceasefire. It redistributed witness rights, arbitration power, and ceremonial authority among the religious factions and city elites gathered in Bell Tower City.",
+      "The adoption of the new calendar effectively acknowledged that the imperial age had ended and that a different historical order now governed the world."
+    ],
+    "detailSlug": "obsidian-bell-treaty"
+  },
+  {
+    "era": "Current Century",
+    "year": "New Calendar 27",
+    "label": "Northern Firefall",
+    "summary": "The sky fissure opened again, driving a renewed search for prophecies and lost maps.",
+    "details": [
+      "Northern Firefall forced dormant prophecies back into political and scholarly attention. Fragments of maps once dismissed as myth were suddenly treated as active intelligence again.",
+      "The event has not truly ended. It is the point where chronicle, atlas, and story lines begin to cross once more in the present day."
+    ],
+    "detailSlug": "north-flare"
+  }
+]

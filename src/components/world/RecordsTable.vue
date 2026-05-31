@@ -4,6 +4,10 @@ defineProps({
     type: Array,
     default: () => [],
   },
+  labels: {
+    type: Object,
+    default: () => ({ dynasty: 'Dynasty', ruler: 'Ruler', reign: 'Reign', seat: 'Seat', notes: 'Notes' }),
+  },
 })
 </script>
 
@@ -13,11 +17,11 @@ defineProps({
       <table class="min-w-full border-collapse text-left text-sm text-ink/80">
         <thead class="sticky top-0 z-10 bg-[rgba(72,16,20,0.92)] text-parchment">
           <tr>
-            <th class="px-4 py-4 font-display text-base">王朝</th>
-            <th class="px-4 py-4 font-display text-base">統治者</th>
-            <th class="px-4 py-4 font-display text-base">統治期間</th>
-            <th class="px-4 py-4 font-display text-base">王座</th>
-            <th class="px-4 py-4 font-display text-base">註記</th>
+            <th class="px-4 py-4 font-display text-base">{{ labels.dynasty }}</th>
+            <th class="px-4 py-4 font-display text-base">{{ labels.ruler }}</th>
+            <th class="px-4 py-4 font-display text-base">{{ labels.reign }}</th>
+            <th class="px-4 py-4 font-display text-base">{{ labels.seat }}</th>
+            <th class="px-4 py-4 font-display text-base">{{ labels.notes }}</th>
           </tr>
         </thead>
         <tbody>

@@ -4,12 +4,13 @@ import { RouterLink, useRoute } from 'vue-router'
 import AppShell from '../components/layout/AppShell.vue'
 import ParchmentPanel from '../components/layout/ParchmentPanel.vue'
 import { useSiteI18n } from '../composables/useSiteI18n'
-import { getLocalizedContent } from '../utils/content'
+import { getContent } from '../utils/data'
 
 const route = useRoute()
 const { locale, localeRoute, messages } = useSiteI18n()
 
-const races = computed(() => getLocalizedContent('sections', locale.value).races?.items || [])
+const sections = computed(() => getContent('sections', locale.value))
+const races = computed(() => sections.value.races?.items || [])
 const race = computed(() => races.value.find((item) => item.slug === route.params.raceSlug))
 const otherRaces = computed(() => races.value.filter((item) => item.slug !== route.params.raceSlug))
 </script>
@@ -19,7 +20,7 @@ const otherRaces = computed(() => races.value.filter((item) => item.slug !== rou
     <ParchmentPanel
       v-if="race"
       variant="wide"
-      :eyebrow="getLocalizedContent('sections', locale).races?.eyebrow"
+      :eyebrow="sections.races?.eyebrow"
       :title="race.title"
       :description="race.subtitle"
     >

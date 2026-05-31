@@ -4,7 +4,7 @@ import { useSiteI18n } from '../../composables/useSiteI18n'
 import { useLightbox } from '../../composables/useLightbox'
 import { withBase } from '../../utils/assets'
 import BaseLightbox from '../lightbox/BaseLightbox.vue'
-import MapPointModal from '../lightbox/MapPointModal.vue'
+import PointModal from '../lightbox/PointModal.vue'
 import MapHotspot from './MapHotspot.vue'
 
 const props = defineProps({
@@ -88,7 +88,7 @@ function selectPoint(point) {
     />
   </BaseLightbox>
 
-  <MapPointModal
+  <PointModal
     v-if="selectedPoint"
     :model-value="isOpen"
     :point="selectedPoint"

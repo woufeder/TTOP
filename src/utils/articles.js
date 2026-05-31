@@ -108,7 +108,7 @@ export function getArticles(locale = DEFAULT_LOCALE, options = {}) {
     .sort((left, right) => new Date(right.date) - new Date(left.date))
 }
 
-export function getArticleBySlug(slug, locale = DEFAULT_LOCALE, options = {}) {
+export function getArticle(slug, locale = DEFAULT_LOCALE, options = {}) {
   return getArticles(locale, options).find((article) => article.slug === slug)
 }
 

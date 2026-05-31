@@ -5,13 +5,13 @@ import { useRoute } from 'vue-router'
 import AppShell from '../components/layout/AppShell.vue'
 import ParchmentPanel from '../components/layout/ParchmentPanel.vue'
 import { useSiteI18n } from '../composables/useSiteI18n'
-import { getLocalizedContent } from '../utils/content'
+import { getContent } from '../utils/data'
 
 const route = useRoute()
 const { locale, localeRoute, messages } = useSiteI18n()
 
-const localizedSections = computed(() => getLocalizedContent('sections', locale.value))
-const section = computed(() => localizedSections.value[route.meta.sectionKey])
+const sectionsMap = computed(() => getContent('sections', locale.value))
+const section = computed(() => sectionsMap.value[route.meta.sectionKey])
 const isRaceSection = computed(() => route.meta.sectionKey === 'races')
 </script>
 

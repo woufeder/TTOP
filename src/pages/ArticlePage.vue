@@ -4,19 +4,19 @@ import { RouterLink, useRoute } from 'vue-router'
 import AppShell from '../components/layout/AppShell.vue'
 import ParchmentPanel from '../components/layout/ParchmentPanel.vue'
 import { useSiteI18n } from '../composables/useSiteI18n'
-import { getArticleBySlug, getArticleTags, getArticles, renderArticle } from '../utils/articles'
+import { getArticle, getArticleTags, getArticles, renderArticle } from '../utils/articles'
 
 const route = useRoute()
 const { locale, localeRoute, messages } = useSiteI18n()
 const articleLine = computed(() => route.meta.articleLine || 'lore')
 const lineCopy = computed(() => messages.value.library[articleLine.value])
-const tagRouteName = computed(() => (articleLine.value === 'story' ? 'stories-tag' : 'articles-tag'))
-const listRouteName = computed(() => (articleLine.value === 'story' ? 'stories' : 'articles'))
+const tagRoute = computed(() => (articleLine.value === 'story' ? 'stories-tag' : 'articles-tag'))
+const listRoute = computed(() => (articleLine.value === 'story' ? 'stories' : 'articles'))
 const isStoryLine = computed(() => articleLine.value === 'story')
 
-const article = computed(() => getArticleBySlug(String(route.params.slug || ''), locale.value, { line: articleLine.value }))
+const article = computed(() => getArticle(String(route.params.slug || ''), locale.value, { line: articleLine.value }))
 const allTags = computed(() => getArticleTags(locale.value, { line: articleLine.value }))
-const allStories = computed(() => getArticles(locale.value, { line: articleLine.value }))
+const allItems = computed(() => getArticles(locale.value, { line: articleLine.value }))
 const rendered = computed(() => (article.value ? renderArticle(article.value.content) : ''))
 
 function formatDate(date) {
@@ -32,7 +32,7 @@ function formatDate(date) {
       <div class="grid min-h-0 gap-6 xl:grid-cols-[minmax(0,1fr)_19rem]">
         <div class="min-h-0 rounded-[4px] border border-white/10 bg-[rgba(7,10,24,0.42)] px-6 py-6 text-parchment shadow-[0_24px_60px_rgba(0,0,0,0.22)] backdrop-blur-sm sm:px-8">
           <div class="flex flex-wrap items-center justify-between gap-4 border-b border-dashed border-white/12 pb-4 text-sm tracking-[0.18em] text-parchment/62">
-            <RouterLink :to="localeRoute(listRouteName)" class="transition hover:text-parchment">
+            <RouterLink :to="localeRoute(listRoute)" class="transition hover:text-parchment">
               {{ lineCopy.backToList }}
             </RouterLink>
             <span>{{ formatDate(article.date) }}</span>
@@ -56,22 +56,22 @@ function formatDate(date) {
             <p class="text-xs uppercase tracking-[0.42em] text-parchment/55">{{ lineCopy.sidebarTitle }}</p>
             <div class="mt-4 space-y-3">
               <RouterLink
-                :to="localeRoute(listRouteName)"
+                :to="localeRoute(listRoute)"
                 class="flex items-center justify-between gap-4 border-b border-dashed border-white/12 pb-3 text-base text-parchment/88 transition hover:text-parchment"
               >
                 <span>{{ lineCopy.all }}</span>
-                <span class="text-parchment/55">({{ allStories.length }})</span>
+                <span class="text-parchment/55">({{ allItems.length }})</span>
               </RouterLink>
 
               <RouterLink
                 v-for="tag in allTags"
                 :key="tag"
-                :to="localeRoute(tagRouteName, { tag })"
+                :to="localeRoute(tagRoute, { tag })"
                 class="flex items-center justify-between gap-4 border-b border-dashed border-white/12 pb-3 text-base transition"
                 :class="article.tags?.includes(tag) ? 'text-parchment' : 'text-parchment/78 hover:text-parchment'"
               >
                 <span>{{ tag }}</span>
-                <span class="text-parchment/55">({{ allStories.filter((entry) => entry.tags?.includes(tag)).length }})</span>
+                <span class="text-parchment/55">({{ allItems.filter((entry) => entry.tags?.includes(tag)).length }})</span>
               </RouterLink>
             </div>
           </section>
@@ -109,7 +109,7 @@ function formatDate(date) {
         <RouterLink
           v-for="tag in article.tags || []"
           :key="tag"
-          :to="localeRoute(tagRouteName, { tag })"
+          :to="localeRoute(tagRoute, { tag })"
           class="rounded-full border border-[rgba(84,46,23,0.12)] bg-white/35 px-4 py-2 text-sm tracking-[0.18em] text-wine/80 transition hover:bg-white/60"
         >
           {{ tag }}
@@ -125,7 +125,7 @@ function formatDate(date) {
       :description="lineCopy.missingDescription"
     >
       <RouterLink
-        :to="localeRoute(listRouteName)"
+        :to="localeRoute(listRoute)"
         class="inline-flex rounded-full bg-wine px-5 py-3 text-sm tracking-[0.18em] text-parchment transition hover:bg-[#5e171d]"
       >
         {{ lineCopy.backToList }}

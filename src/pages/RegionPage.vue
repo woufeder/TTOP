@@ -5,11 +5,11 @@ import AppShell from '../components/layout/AppShell.vue'
 import ParchmentPanel from '../components/layout/ParchmentPanel.vue'
 import WorldMap from '../components/map/WorldMap.vue'
 import { useSiteI18n } from '../composables/useSiteI18n'
-import { getLocalizedContent } from '../utils/content'
+import { getContent } from '../utils/data'
 
 const route = useRoute()
 const { locale, localeRoute, messages } = useSiteI18n()
-const regions = computed(() => getLocalizedContent('regions', locale.value))
+const regions = computed(() => getContent('regions', locale.value))
 
 const region = computed(() =>
   regions.value.find((item) => item.slug === route.params.regionSlug && item.slug !== 'world-overview'),

@@ -31,19 +31,19 @@ const routes = [
   {
     path: localized('/world/terms'),
     name: 'terms',
-    component: () => import('../pages/InfoListPage.vue'),
+    component: () => import('../pages/InfoPage.vue'),
     meta: { sectionKey: 'terms' },
   },
   {
     path: localized('/world/religions'),
     name: 'religions',
-    component: () => import('../pages/InfoListPage.vue'),
+    component: () => import('../pages/InfoPage.vue'),
     meta: { sectionKey: 'religions' },
   },
   {
     path: localized('/world/organizations'),
     name: 'organizations',
-    component: () => import('../pages/InfoListPage.vue'),
+    component: () => import('../pages/InfoPage.vue'),
     meta: { sectionKey: 'organizations' },
   },
   {
@@ -54,18 +54,18 @@ const routes = [
   {
     path: localized('/map/:regionSlug'),
     name: 'region-map',
-    component: () => import('../pages/RegionMapPage.vue'),
+    component: () => import('../pages/RegionPage.vue'),
   },
   {
     path: localized('/races'),
     name: 'races',
-    component: () => import('../pages/InfoListPage.vue'),
+    component: () => import('../pages/InfoPage.vue'),
     meta: { sectionKey: 'races' },
   },
   {
     path: localized('/races/:raceSlug'),
     name: 'race-detail',
-    component: () => import('../pages/RaceDetailPage.vue'),
+    component: () => import('../pages/RacePage.vue'),
   },
   {
     path: localized('/powers'),
@@ -86,48 +86,48 @@ const routes = [
   {
     path: localized('/characters/:slug'),
     name: 'character-detail',
-    component: () => import('../pages/CharacterDetailPage.vue'),
+    component: () => import('../pages/CharacterPage.vue'),
   },
   {
     path: localized('/articles'),
     name: 'articles',
-    component: () => import('../pages/ArticlesIndexPage.vue'),
+    component: () => import('../pages/ArticlesPage.vue'),
     meta: { articleLine: 'lore' },
   },
   {
     path: localized('/articles/tags/:tag'),
     name: 'articles-tag',
-    component: () => import('../pages/ArticlesIndexPage.vue'),
+    component: () => import('../pages/ArticlesPage.vue'),
     meta: { articleLine: 'lore' },
   },
   {
     path: localized('/articles/:slug'),
     name: 'article-detail',
-    component: () => import('../pages/ArticleDetailPage.vue'),
+    component: () => import('../pages/ArticlePage.vue'),
     meta: { articleLine: 'lore' },
   },
   {
     path: localized('/stories'),
     name: 'stories',
-    component: () => import('../pages/ArticlesIndexPage.vue'),
+    component: () => import('../pages/ArticlesPage.vue'),
     meta: { articleLine: 'story' },
   },
   {
     path: localized('/stories/tags/:tag'),
     name: 'stories-tag',
-    component: () => import('../pages/ArticlesIndexPage.vue'),
+    component: () => import('../pages/ArticlesPage.vue'),
     meta: { articleLine: 'story' },
   },
   {
     path: localized('/stories/:slug'),
     name: 'story-detail',
-    component: () => import('../pages/ArticleDetailPage.vue'),
+    component: () => import('../pages/ArticlePage.vue'),
     meta: { articleLine: 'story' },
   },
   {
     path: localized('/credits'),
     name: 'credits',
-    component: () => import('../pages/InfoListPage.vue'),
+    component: () => import('../pages/InfoPage.vue'),
     meta: { sectionKey: 'credits' },
   },
   {

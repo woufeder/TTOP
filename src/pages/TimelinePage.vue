@@ -4,10 +4,10 @@ import AppShell from '../components/layout/AppShell.vue'
 import ParchmentPanel from '../components/layout/ParchmentPanel.vue'
 import Timeline from '../components/world/Timeline.vue'
 import { useSiteI18n } from '../composables/useSiteI18n'
-import { getLocalizedContent } from '../utils/content'
+import { getContent } from '../utils/data'
 
 const { locale, messages } = useSiteI18n()
-const timeline = computed(() => getLocalizedContent('timeline', locale.value))
+const timeline = computed(() => getContent('timeline', locale.value))
 </script>
 
 <template>

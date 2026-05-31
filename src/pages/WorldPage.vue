@@ -4,15 +4,15 @@ import { RouterLink } from 'vue-router'
 import AppShell from '../components/layout/AppShell.vue'
 import ParchmentPanel from '../components/layout/ParchmentPanel.vue'
 import SectionPager from '../components/layout/SectionPager.vue'
-import VerticalTextBlock from '../components/world/VerticalTextBlock.vue'
+import VerticalText from '../components/world/VerticalText.vue'
 import { useSiteI18n } from '../composables/useSiteI18n'
-import { getLocalizedContent } from '../utils/content'
+import { getContent } from '../utils/data'
 import { getArticles } from '../utils/articles'
 
 const { locale, localeRoute, messages } = useSiteI18n()
 const pageCopy = computed(() => messages.value.world)
-const regions = computed(() => getLocalizedContent('regions', locale.value))
-const characters = computed(() => getLocalizedContent('characters', locale.value))
+const regions = computed(() => getContent('regions', locale.value))
+const characters = computed(() => getContent('characters', locale.value))
 
 const activeIndex = ref(0)
 
@@ -42,7 +42,7 @@ const featuredArticles = computed(() => getArticles(locale.value, { line: 'lore'
             </p>
           </section>
 
-          <VerticalTextBlock :title="pageCopy.introTitle" :paragraphs="pageCopy.introColumns" :columns="3" max-height="24rem" />
+          <VerticalText :title="pageCopy.introTitle" :paragraphs="pageCopy.introColumns" :columns="3" max-height="24rem" />
 
           <div class="grid gap-4 sm:grid-cols-3">
             <RouterLink

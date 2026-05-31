@@ -43,7 +43,7 @@ const registry = {
   },
 }
 
-export function getLocalizedContent(key, locale) {
+export function getContent(key, locale) {
   const normalizedLocale = normalizeLocale(locale)
   const dataset = registry[key]
 

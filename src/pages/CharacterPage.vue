@@ -4,11 +4,11 @@ import { RouterLink, useRoute } from 'vue-router'
 import AppShell from '../components/layout/AppShell.vue'
 import ParchmentPanel from '../components/layout/ParchmentPanel.vue'
 import { useSiteI18n } from '../composables/useSiteI18n'
-import { getLocalizedContent } from '../utils/content'
+import { getContent } from '../utils/data'
 
 const route = useRoute()
 const { locale, localeRoute, messages } = useSiteI18n()
-const characters = computed(() => getLocalizedContent('characters', locale.value))
+const characters = computed(() => getContent('characters', locale.value))
 
 const character = computed(() =>
   characters.value.find((item) => item.slug === String(route.params.slug || '')),

@@ -4,10 +4,10 @@ import AppShell from '../components/layout/AppShell.vue'
 import ParchmentPanel from '../components/layout/ParchmentPanel.vue'
 import RecordsTable from '../components/world/RecordsTable.vue'
 import { useSiteI18n } from '../composables/useSiteI18n'
-import { getLocalizedContent } from '../utils/content'
+import { getContent } from '../utils/data'
 
 const { locale, messages } = useSiteI18n()
-const records = computed(() => getLocalizedContent('records', locale.value))
+const records = computed(() => getContent('records', locale.value))
 </script>
 
 <template>

@@ -61,21 +61,21 @@ const character = computed(() =>
                 class="rounded-[18px] border border-[rgba(84,46,23,0.08)] bg-white/35 p-4"
               >
                 <p class="text-xs uppercase tracking-[0.28em] text-wine/55">{{ connection.label }}</p>
-                <p class="mt-2 text-sm leading-7 text-ink/76">{{ connection.value }}</p>
+                <p class="mt-2  leading-7 text-ink/76">{{ connection.value }}</p>
               </div>
             </div>
           </article>
 
           <article class="paper-card rounded-[26px] p-5 sm:p-6">
             <p class="text-xs uppercase tracking-[0.34em] text-wine/55">{{ messages.characterDetail.dossierKicker }}</p>
-            <div class="mt-4 space-y-4 text-sm leading-8 text-ink/76 sm:text-base">
+            <div class="mt-4 space-y-4  leading-8 text-ink/76 sm:text-base">
               <p v-for="paragraph in character.body" :key="paragraph">{{ paragraph }}</p>
             </div>
           </article>
 
           <RouterLink
             :to="localeRoute('characters')"
-            class="inline-flex rounded-full bg-wine px-5 py-3 text-sm tracking-[0.18em] text-parchment transition hover:bg-[#5e171d]"
+            class="inline-flex rounded-full bg-wine px-5 py-3  tracking-[0.18em] text-parchment transition hover:bg-[#5e171d]"
           >
             {{ messages.characterDetail.backToList }}
           </RouterLink>
@@ -92,7 +92,7 @@ const character = computed(() =>
     >
       <RouterLink
         :to="localeRoute('characters')"
-        class="inline-flex rounded-full bg-wine px-5 py-3 text-sm tracking-[0.18em] text-parchment transition hover:bg-[#5e171d]"
+        class="inline-flex rounded-full bg-wine px-5 py-3  tracking-[0.18em] text-parchment transition hover:bg-[#5e171d]"
       >
         {{ messages.characterDetail.backToList }}
       </RouterLink>

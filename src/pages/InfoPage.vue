@@ -36,8 +36,8 @@ const isRaceSection = computed(() => route.meta.sectionKey === 'races')
           <p class="text-xs uppercase tracking-[0.34em] text-wine/55">{{ messages.infoList.entryKicker }}</p>
           <h2 class="mt-3 font-display text-3xl text-ink">{{ item.title }}</h2>
           <p class="mt-2 text-xs uppercase tracking-[0.28em] text-oldGold">{{ item.subtitle }}</p>
-          <p class="mt-4 text-sm leading-8 text-ink/74">{{ item.summary }}</p>
-          <p v-if="isRaceSection" class="mt-auto pt-6 text-sm tracking-[0.18em] text-wine/80">
+          <p class="mt-4  leading-8 text-ink/74">{{ item.summary }}</p>
+          <p v-if="isRaceSection" class="mt-auto pt-6  tracking-[0.18em] text-wine/80">
             {{ messages.raceDetail.openDetail }}
           </p>
         </component>

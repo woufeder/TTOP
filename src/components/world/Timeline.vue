@@ -79,7 +79,7 @@ function openEvent(event) {
               </p>
 
               <p
-                class="absolute left-1/2 max-w-[11rem] -translate-x-1/2 text-center text-sm leading-7 text-ink/70"
+                class="absolute left-1/2 max-w-[11rem] -translate-x-1/2 text-center  leading-7 text-ink/70"
                 :class="event.lane === 'top' ? 'top-[18rem]' : 'top-[5.5rem]'"
               >
                 {{ event.summary }}
@@ -109,7 +109,7 @@ function openEvent(event) {
             <span>{{ event.year }}</span>
           </div>
           <h3 class="mt-3 font-display text-2xl text-ink">{{ event.label }}</h3>
-          <p class="mt-3 text-sm leading-7 text-ink/74">{{ event.summary }}</p>
+          <p class="mt-3  leading-7 text-ink/74">{{ event.summary }}</p>
         </button>
       </li>
     </ol>
@@ -130,7 +130,7 @@ function openEvent(event) {
           </p>
         </div>
 
-        <p class="text-sm tracking-[0.18em] text-wine/70">{{ messages.openHint }}</p>
+        <p class=" tracking-[0.18em] text-wine/70">{{ messages.openHint }}</p>
       </div>
     </BaseLightbox>
   </div>

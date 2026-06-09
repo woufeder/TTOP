@@ -54,12 +54,12 @@ function formatDate(date) {
           <header class="border-b border-dashed border-white/12 pb-5">
             <p class="text-xs uppercase tracking-[0.42em] text-parchment/55">{{ lineCopy.eyebrow }}</p>
             <h1 class="mt-3 font-display text-4xl text-parchment">{{ heading }}</h1>
-            <p class="mt-4 max-w-3xl text-sm leading-8 text-parchment/72">{{ lineCopy.description }}</p>
+            <p class="mt-4 max-w-3xl  leading-8 text-parchment/72">{{ lineCopy.description }}</p>
           </header>
 
           <div v-if="filtered.length" class="divide-y divide-dashed divide-white/12">
             <article v-for="article in filtered" :key="article.slug" class="py-8 first:pt-7">
-              <div class="flex flex-wrap items-start justify-between gap-4 text-sm text-parchment/55">
+              <div class="flex flex-wrap items-start justify-between gap-4  text-parchment/55">
                 <p class="tracking-[0.18em]">{{ formatDate(article.date) }}</p>
                 <p class="text-right tracking-[0.18em]">{{ article.tags?.join(' ｜ ') }}</p>
               </div>
@@ -69,7 +69,7 @@ function formatDate(date) {
 
               <RouterLink
                 :to="localeRoute(detailRoute, { slug: article.slug })"
-                class="mt-8 inline-flex rounded-[4px] border border-white/18 px-5 py-3 text-sm tracking-[0.22em] text-parchment/90 transition hover:bg-white/8"
+                class="mt-8 inline-flex rounded-[4px] border border-white/18 px-5 py-3  tracking-[0.22em] text-parchment/90 transition hover:bg-white/8"
               >
                 {{ lineCopy.read }}
               </RouterLink>
@@ -78,7 +78,7 @@ function formatDate(date) {
 
           <section v-else class="py-8 text-center">
             <p class="font-display text-3xl text-parchment">{{ lineCopy.emptyTitle }}</p>
-            <p class="mt-3 text-sm leading-8 text-parchment/68">{{ lineCopy.emptyDescription }}</p>
+            <p class="mt-3  leading-8 text-parchment/68">{{ lineCopy.emptyDescription }}</p>
           </section>
         </div>
 
@@ -120,7 +120,7 @@ function formatDate(date) {
       <div class="flex flex-wrap gap-3">
         <RouterLink
           :to="localeRoute(listRoute)"
-          class="rounded-full border px-4 py-2 text-sm tracking-[0.18em] transition"
+          class="rounded-full border px-4 py-2  tracking-[0.18em] transition"
           :class="activeTag ? 'border-[rgba(84,46,23,0.12)] bg-white/35 text-wine/80' : 'border-wine bg-wine text-parchment'"
         >
           {{ lineCopy.all }}
@@ -129,7 +129,7 @@ function formatDate(date) {
           v-for="tag in tags"
           :key="tag"
           :to="localeRoute(tagRoute, { tag })"
-          class="rounded-full border px-4 py-2 text-sm tracking-[0.18em] transition"
+          class="rounded-full border px-4 py-2  tracking-[0.18em] transition"
           :class="
             activeTag === tag
               ? 'border-wine bg-wine text-parchment'
@@ -161,11 +161,11 @@ function formatDate(date) {
             </div>
 
             <h2 class="mt-4 font-display text-3xl text-ink">{{ article.title }}</h2>
-            <p class="mt-4 text-sm leading-8 text-ink/74">{{ article.summary }}</p>
+            <p class="mt-4  leading-8 text-ink/74">{{ article.summary }}</p>
 
             <RouterLink
               :to="localeRoute(detailRoute, { slug: article.slug })"
-              class="mt-auto inline-flex rounded-full bg-wine px-5 py-3 pt-6 text-sm tracking-[0.18em] text-parchment transition hover:bg-[#5e171d]"
+              class="mt-auto inline-flex rounded-full bg-wine px-5 py-3 pt-6  tracking-[0.18em] text-parchment transition hover:bg-[#5e171d]"
             >
               {{ lineCopy.read }}
             </RouterLink>
@@ -175,7 +175,7 @@ function formatDate(date) {
 
       <section v-if="!filtered.length" class="paper-card mt-6 rounded-[24px] p-6 text-center">
         <p class="font-display text-3xl text-ink">{{ lineCopy.emptyTitle }}</p>
-        <p class="mt-3 text-sm leading-7 text-ink/72">{{ lineCopy.emptyDescription }}</p>
+        <p class="mt-3  leading-7 text-ink/72">{{ lineCopy.emptyDescription }}</p>
       </section>
     </ParchmentPanel>
   </AppShell>

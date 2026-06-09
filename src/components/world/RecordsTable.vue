@@ -14,7 +14,7 @@ defineProps({
 <template>
   <div class="overflow-hidden rounded-[26px] border border-[rgba(84,46,23,0.12)] bg-white/45">
     <div class="paper-scroll max-h-[60dvh] overflow-auto">
-      <table class="min-w-full border-collapse text-left text-sm text-ink/80">
+      <table class="min-w-full border-collapse text-left  text-ink/80">
         <thead class="sticky top-0 z-10 bg-[rgba(72,16,20,0.92)] text-parchment">
           <tr>
             <th class="px-4 py-4 font-display text-base">{{ labels.dynasty }}</th>

@@ -35,7 +35,7 @@ const variantClass = computed(() => {
 <template>
   <section
     :class="[
-      'paper-panel ornate-border relative mx-auto flex min-h-0 w-full flex-col overflow-hidden rounded-[30px] text-ink',
+      'paper-panel relative mx-auto flex min-h-0 w-full flex-col overflow-hidden text-ink',
       variantClass,
     ]"
   >
@@ -49,7 +49,7 @@ const variantClass = computed(() => {
       <h1 v-if="title" class="mt-3 font-display text-3xl leading-tight text-ink sm:text-4xl">
         {{ title }}
       </h1>
-      <p v-if="description" class="mt-3 max-w-3xl text-sm leading-7 text-ink/78 sm:text-base">
+      <p v-if="description" class="mt-3 max-w-3xl  leading-7 text-ink/78 sm:text-base">
         {{ description }}
       </p>
     </header>

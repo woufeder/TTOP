@@ -42,7 +42,7 @@ const regionMaps = computed(() => regions.value.filter((region) => region.slug !
             <p class="text-xs uppercase tracking-[0.32em] text-wine/55">{{ messages.map.regionKicker }}</p>
             <h2 class="mt-3 font-display text-3xl text-ink">{{ region.name }}</h2>
             <p class="mt-2 text-xs uppercase tracking-[0.28em] text-oldGold">{{ region.subtitle }}</p>
-            <p class="mt-4 text-sm leading-7 text-ink/74">{{ region.summary }}</p>
+            <p class="mt-4  leading-7 text-ink/74">{{ region.summary }}</p>
           </div>
         </RouterLink>
       </div>

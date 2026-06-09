@@ -36,7 +36,7 @@ defineProps({
       <p
         v-for="paragraph in paragraphs"
         :key="paragraph"
-        class="rounded-[18px] border border-[rgba(84,46,23,0.08)] bg-white/35 p-4 text-sm leading-7 text-ink/80"
+        class="rounded-[18px] border border-[rgba(84,46,23,0.08)] bg-white/35 p-4  leading-7 text-ink/80"
       >
         {{ paragraph }}
       </p>
@@ -53,7 +53,7 @@ defineProps({
       <p
         v-for="paragraph in paragraphs"
         :key="paragraph"
-        class="writing-vertical rounded-[18px] border border-[rgba(84,46,23,0.08)] bg-white/35 p-3 text-sm leading-7 tracking-[0.12em] text-wine/85"
+        class="writing-vertical rounded-[18px] border border-[rgba(84,46,23,0.08)] bg-white/35 p-3  leading-7 tracking-[0.12em] text-wine/85"
       >
         {{ paragraph }}
       </p>

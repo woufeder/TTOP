@@ -31,7 +31,7 @@ function formatDate(date) {
     <section v-if="article && isStoryLine" class="w-full min-h-0">
       <div class="grid min-h-0 gap-6 xl:grid-cols-[minmax(0,1fr)_19rem]">
         <div class="min-h-0 rounded-[4px] border border-white/10 bg-[rgba(7,10,24,0.42)] px-6 py-6 text-parchment shadow-[0_24px_60px_rgba(0,0,0,0.22)] backdrop-blur-sm sm:px-8">
-          <div class="flex flex-wrap items-center justify-between gap-4 border-b border-dashed border-white/12 pb-4 text-sm tracking-[0.18em] text-parchment/62">
+          <div class="flex flex-wrap items-center justify-between gap-4 border-b border-dashed border-white/12 pb-4  tracking-[0.18em] text-parchment/62">
             <RouterLink :to="localeRoute(listRoute)" class="transition hover:text-parchment">
               {{ lineCopy.backToList }}
             </RouterLink>
@@ -42,7 +42,7 @@ function formatDate(date) {
             <p class="text-xs uppercase tracking-[0.42em] text-parchment/55">{{ lineCopy.eyebrow }}</p>
             <h1 class="mt-4 font-display text-5xl leading-tight text-parchment">{{ article.title }}</h1>
             <p class="mt-5 max-w-4xl text-lg leading-10 text-parchment/82">{{ article.summary }}</p>
-            <p class="mt-6 text-sm tracking-[0.18em] text-parchment/55">{{ article.tags?.join(' ｜ ') }}</p>
+            <p class="mt-6  tracking-[0.18em] text-parchment/55">{{ article.tags?.join(' ｜ ') }}</p>
           </header>
 
           <article
@@ -110,7 +110,7 @@ function formatDate(date) {
           v-for="tag in article.tags || []"
           :key="tag"
           :to="localeRoute(tagRoute, { tag })"
-          class="rounded-full border border-[rgba(84,46,23,0.12)] bg-white/35 px-4 py-2 text-sm tracking-[0.18em] text-wine/80 transition hover:bg-white/60"
+          class="rounded-full border border-[rgba(84,46,23,0.12)] bg-white/35 px-4 py-2  tracking-[0.18em] text-wine/80 transition hover:bg-white/60"
         >
           {{ tag }}
         </RouterLink>
@@ -126,7 +126,7 @@ function formatDate(date) {
     >
       <RouterLink
         :to="localeRoute(listRoute)"
-        class="inline-flex rounded-full bg-wine px-5 py-3 text-sm tracking-[0.18em] text-parchment transition hover:bg-[#5e171d]"
+        class="inline-flex rounded-full bg-wine px-5 py-3  tracking-[0.18em] text-parchment transition hover:bg-[#5e171d]"
       >
         {{ lineCopy.backToList }}
       </RouterLink>

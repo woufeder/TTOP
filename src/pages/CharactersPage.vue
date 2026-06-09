@@ -35,7 +35,7 @@ const characters = computed(() => getContent('characters', locale.value))
             </div>
           </div>
 
-          <p class="mt-5 text-sm leading-8 text-ink/74">{{ character.summary }}</p>
+          <p class="mt-5  leading-8 text-ink/74">{{ character.summary }}</p>
 
           <div class="mt-auto flex flex-wrap gap-2 pt-5">
             <span

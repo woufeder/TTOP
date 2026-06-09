@@ -59,7 +59,7 @@ const { localeRoute, messages } = useSiteI18n()
 
         <div class="rounded-[22px] border border-[rgba(84,46,23,0.12)] bg-white/40 p-5">
           <p class="text-xs uppercase tracking-[0.32em] text-wine/55">{{ messages.map.excerptKicker }}</p>
-          <ul class="mt-4 space-y-3 text-sm leading-7 text-ink/75">
+          <ul class="mt-4 space-y-3  leading-7 text-ink/75">
             <li v-for="fact in point.facts || []" :key="fact" class="flex gap-3">
               <span class="keep-round mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-oldGold" />
               <span>{{ fact }}</span>
@@ -70,7 +70,7 @@ const { localeRoute, messages } = useSiteI18n()
         <RouterLink
           v-if="point.targetRegionSlug"
           :to="localeRoute('region-map', { regionSlug: point.targetRegionSlug })"
-          class="inline-flex rounded-full bg-wine px-5 py-3 text-sm tracking-[0.18em] text-parchment transition hover:bg-[#5e171d]"
+          class="inline-flex rounded-full bg-wine px-5 py-3  tracking-[0.18em] text-parchment transition hover:bg-[#5e171d]"
         >
           {{ messages.map.openRegionMap }}
         </RouterLink>

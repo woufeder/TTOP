@@ -21,7 +21,7 @@ const timeline = computed(() => getContent('timeline', locale.value))
       <section class="border-b border-[rgba(84,46,23,0.1)] pb-5">
         <p class="text-xs uppercase tracking-[0.36em] text-wine/55">{{ messages.timeline.introKicker }}</p>
         <h2 class="mt-3 font-display text-3xl text-ink">{{ messages.timeline.introTitle }}</h2>
-        <p class="mt-4 max-w-3xl text-sm leading-8 text-ink/76 sm:text-base">
+        <p class="mt-4 max-w-3xl  leading-8 text-ink/76 sm:text-base">
           {{ messages.timeline.introBody }}
         </p>
       </section>

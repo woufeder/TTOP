@@ -21,7 +21,7 @@ const records = computed(() => getContent('records', locale.value))
       <section class="paper-card rounded-[26px] p-5 sm:p-6">
         <p class="text-xs uppercase tracking-[0.36em] text-wine/55">{{ messages.records.introKicker }}</p>
         <h2 class="mt-3 font-display text-3xl text-ink">{{ messages.records.introTitle }}</h2>
-        <p class="mt-4 max-w-3xl text-sm leading-8 text-ink/76 sm:text-base">
+        <p class="mt-4 max-w-3xl  leading-8 text-ink/76 sm:text-base">
           {{ messages.records.introBody }}
         </p>
       </section>

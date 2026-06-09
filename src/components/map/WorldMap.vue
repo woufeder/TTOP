@@ -47,7 +47,7 @@ function selectPoint(point) {
 
         <button
           type="button"
-          class="rounded-full border border-parchment/20 bg-white/10 px-4 py-2 text-sm tracking-[0.18em] transition hover:bg-white/15"
+          class="rounded-full border border-parchment/20 bg-white/10 px-4 py-2  tracking-[0.18em] transition hover:bg-white/15"
           @click="imageOpen = true"
         >
           {{ messages.map.viewFullImage }}
@@ -67,7 +67,7 @@ function selectPoint(point) {
         >
           <p class="font-display text-xl text-ink">{{ point.name }}</p>
           <p class="mt-1 text-xs uppercase tracking-[0.3em] text-oldGold">{{ point.type }}</p>
-          <p class="mt-3 text-sm leading-7 text-ink/72">{{ point.summary }}</p>
+          <p class="mt-3  leading-7 text-ink/72">{{ point.summary }}</p>
         </button>
       </div>
     </aside>

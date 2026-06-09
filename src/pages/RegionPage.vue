@@ -32,12 +32,12 @@ const region = computed(() =>
           <section class="paper-card rounded-[24px] p-5">
             <p class="text-xs uppercase tracking-[0.34em] text-wine/55">{{ messages.regionMap.overviewKicker }}</p>
             <h2 class="mt-3 font-display text-3xl text-ink">{{ region.subtitle }}</h2>
-            <p class="mt-4 text-sm leading-8 text-ink/74">{{ region.summary }}</p>
+            <p class="mt-4  leading-8 text-ink/74">{{ region.summary }}</p>
           </section>
 
           <section class="paper-card rounded-[24px] p-5">
             <p class="text-xs uppercase tracking-[0.34em] text-wine/55">{{ messages.regionMap.routeNotesKicker }}</p>
-            <ul class="mt-4 space-y-3 text-sm leading-7 text-ink/74">
+            <ul class="mt-4 space-y-3  leading-7 text-ink/74">
               <li v-for="point in region.hotspots" :key="point.slug" class="flex gap-3">
                 <span class="keep-round mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-oldGold" />
                 <span>{{ point.name }}：{{ point.summary }}</span>
@@ -47,7 +47,7 @@ const region = computed(() =>
 
           <RouterLink
             :to="localeRoute('map')"
-            class="inline-flex rounded-full bg-wine px-5 py-3 text-sm tracking-[0.18em] text-parchment transition hover:bg-[#5e171d]"
+            class="inline-flex rounded-full bg-wine px-5 py-3  tracking-[0.18em] text-parchment transition hover:bg-[#5e171d]"
           >
             {{ messages.regionMap.backToMap }}
           </RouterLink>
@@ -64,7 +64,7 @@ const region = computed(() =>
     >
       <RouterLink
         :to="localeRoute('map')"
-        class="inline-flex rounded-full bg-wine px-5 py-3 text-sm tracking-[0.18em] text-parchment transition hover:bg-[#5e171d]"
+        class="inline-flex rounded-full bg-wine px-5 py-3  tracking-[0.18em] text-parchment transition hover:bg-[#5e171d]"
       >
         {{ messages.regionMap.backToMapList }}
       </RouterLink>

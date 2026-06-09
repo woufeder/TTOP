@@ -24,7 +24,7 @@ const otherRaces = computed(() => races.value.filter((item) => item.slug !== rou
       :title="race.title"
       :description="race.subtitle"
     >
-      <div class="flex flex-wrap items-center justify-between gap-4 border-b border-[rgba(84,46,23,0.1)] pb-5 text-sm tracking-[0.18em] text-wine/70">
+      <div class="flex flex-wrap items-center justify-between gap-4 border-b border-[rgba(84,46,23,0.1)] pb-5  tracking-[0.18em] text-wine/70">
         <RouterLink :to="localeRoute('races')" class="transition hover:text-wine">
           {{ messages.raceDetail.backToList }}
         </RouterLink>
@@ -50,7 +50,7 @@ const otherRaces = computed(() => races.value.filter((item) => item.slug !== rou
             >
               <p class="font-display text-2xl text-ink">{{ entry.title }}</p>
               <p class="mt-1 text-xs uppercase tracking-[0.28em] text-oldGold">{{ entry.subtitle }}</p>
-              <p class="mt-3 text-sm leading-7 text-ink/72">{{ entry.summary }}</p>
+              <p class="mt-3  leading-7 text-ink/72">{{ entry.summary }}</p>
             </RouterLink>
           </div>
         </aside>
@@ -66,7 +66,7 @@ const otherRaces = computed(() => races.value.filter((item) => item.slug !== rou
     >
       <RouterLink
         :to="localeRoute('races')"
-        class="inline-flex rounded-full bg-wine px-5 py-3 text-sm tracking-[0.18em] text-parchment transition hover:bg-[#5e171d]"
+        class="inline-flex rounded-full bg-wine px-5 py-3  tracking-[0.18em] text-parchment transition hover:bg-[#5e171d]"
       >
         {{ messages.raceDetail.backToList }}
       </RouterLink>

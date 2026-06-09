@@ -17,7 +17,7 @@ const mobileItems = computed(() => navItems.value)
 
 <template>
   <header class="pointer-events-none fixed inset-x-0 top-0 z-40 pt-4">
-    <div class="pointer-events-auto w-full border-y border-white/10 bg-[rgba(10,12,20,0.64)] text-parchment shadow-halo backdrop-blur-xl">
+    <div class="pointer-events-auto w-full border-y ">
       <div class="container flex items-center justify-between gap-3 px-3 py-2">
         <RouterLink
           :to="localeRoute('world')"
@@ -36,11 +36,11 @@ const mobileItems = computed(() => navItems.value)
           <div v-for="item in navItems" :key="item.routeName" class="group relative">
             <RouterLink
               :to="localeRoute(item.routeName)"
-              class="rounded px-4 py-2 text-sm tracking-[0.18em] transition"
+              class="rounded px-4 py-2  tracking-[0.18em] transition"
               :class="
                 isActive(item)
                   ? 'bg-white/10 text-parchment'
-                  : 'text-parchment/70 hover:bg-white/5 hover:text-parchment'
+                  : 'text-black hover:bg-white/5 hover:text-parchment'
               "
             >
               {{ item.label }}
@@ -54,7 +54,7 @@ const mobileItems = computed(() => navItems.value)
                 v-for="child in item.children"
                 :key="child.routeName"
                 :to="localeRoute(child.routeName)"
-                class="block rounded px-4 py-3 text-sm text-ink transition hover:bg-[rgba(79,31,18,0.08)]"
+                class="block rounded px-4 py-3  text-ink transition hover:bg-[rgba(79,31,18,0.08)]"
               >
                 <span class="block font-display text-base tracking-[0.08em]">{{ child.label }}</span>
                 <span class="mt-1 block text-xs uppercase tracking-[0.28em] text-wine/60">
@@ -91,9 +91,9 @@ const mobileItems = computed(() => navItems.value)
 
     <nav class="pointer-events-auto mt-3 overflow-x-auto lg:hidden">
       <div
-        class="w-full border-y border-white/10 bg-[rgba(10,12,20,0.56)] shadow-halo backdrop-blur-xl"
+        class="w-full border-y border-white/10 bg-[rgba(10,12,20,0.56)]  backdrop-blur-xl"
       >
-        <div class="container flex min-w-max gap-2 p-2 text-sm text-parchment/85">
+        <div class="container flex min-w-max gap-2 p-2  text-parchment/85">
           <RouterLink
             v-for="item in mobileItems"
             :key="item.routeName"
@@ -112,7 +112,7 @@ const mobileItems = computed(() => navItems.value)
     </nav>
 
     <nav class="pointer-events-auto mt-2 lg:hidden">
-      <div class="w-full border-y border-white/10 bg-[rgba(10,12,20,0.56)] shadow-halo backdrop-blur-xl">
+      <div class="w-full border-y border-white/10 bg-[rgba(10,12,20,0.56)]  backdrop-blur-xl">
         <div class="container flex items-center gap-2 p-2 text-parchment/85">
           <span class="px-1 text-[0.65rem] uppercase tracking-[0.28em] text-parchment/55">{{ messages.header.languageLabel }}</span>
           <RouterLink
